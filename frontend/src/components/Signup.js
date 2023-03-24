@@ -36,13 +36,7 @@ const Signup = () => {
             <div className="cont">
               <h2 className="cc"> Create an Account </h2>
               {/* <form action="post"> */}
-              <input
-                type="text"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                placeholder="Name"
-                className="User"
-              />
+              <input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Name" className="User"/>
               <input
                 type="email"
                 value={email}
