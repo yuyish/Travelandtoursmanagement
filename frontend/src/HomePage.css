@@ -1,79 +1,158 @@
 /*  */
 /* Style for the search box */
 #search-box {
-    width: 400px;
-    height: 40px;
-    border-radius: 20px;
-    padding: 10px;
-    font-size: 18px;
-    border: none;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
-  #search-box {
-    width: 20%;
-    height: 40px;
-    border-radius: 20px;
-    padding: 10px;
-    font-size: 18px;
-    border: none;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: left;
-  }
-  
-  .heading {
-    color: white;
-  }
-  
-  /* Style for the search button */
-  #search-btn {
-    width: 80px;
-    height: 40px;
-    border-radius: 20px;
-    font-size: 18px;
-    border: none;
-    background-color: #4caf50;
-    color: white;
-    cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Style for the container div */
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 110vh;
-  }
-  
-  /* Style for the search container */
-  .search-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  
-  /* Style for the card */
-  .card {
-    /* background-color: #D8D4D4; */
-    background: linear-gradient(
-      rgba(236, 233, 233, 0.4),
-      rgba(169, 167, 167, 0.4) 50%
-    );
-    padding: 10px;
-    width: 100%;
-    height: 45pt;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  .HomeMainDiv{
-    width: 100%;
-    height: 60rem;
-    background-image: url("../public/Images/homepageImage.jpg");
-    background-size: cover;
-  }
+  width: 400px;
+  height: 40px;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
 
-  
+#search-box {
+  width: 20%;
+  height: 40px;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+
+
+/* Style for the search button */
+#search-btn {
+  width: 80px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 18px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the container div */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: top;
+  justify-content: center;
+  height: 60vh;
+  padding: 0%;
+}
+
+/* Style for the search container */
+.search-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Style for the card */
+.card {
+  /* background-color: #D8D4D4; */
+  background: linear-gradient(
+    rgba(236, 233, 233, 0.4),
+    rgba(169, 167, 167, 0.4) 50%
+  );
+  padding: 10px;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.HomeMainDiv{
+  width: 100%;
+  height: 90vh;
+  background-image: url("../public/Images/homepageImage.jpg");
+  background-size:cover;
+}
+.h1{
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 500%;
+color: white;
+font-size: 30pt;
+padding: 0px;
+}
+.h4{
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 200%;
+font-size: 14pt;
+color: white;
+}
+
+/*  */
+/*  */
+.search-bar {
+display: flex;
+align-items: center;
+justify-content: space-between;
+max-width: 1200px;
+color: #E4E2E2;
+margin: 0 auto;
+}
+
+.search-box {
+width: 65%;
+position:relative;
+}
+
+
+.inp{
+width: 100%;
+padding: 15px 35px 15px 15px;
+border: none;
+border-radius: 5px;
+font-size: 16px;
+}
+
+input[type="text"]:focus {
+outline: none;
+box-shadow: 0 0 0 2px #007bff;
+}
+
+.date-box {
+display: flex;
+width: 30%;
+/* align-items: c; */
+}
+
+.date-box label {
+margin-right: 10px;
+color: #333;
+}
+
+input[type="text"]#date {
+width: 100%;
+padding: 15px;
+border: none;
+font-size: 16px;
+text-align: center;
+}
+
+#search-button {
+background-color: #FF533C;
+color: #fff;
+border: none;
+border-radius: 5px;
+font-size: 16px;
+padding: 15px 80px;
+cursor: pointer;
+}
+
+#search-button:hover,
+#calendar-button:hover {
+background-color: #0062cc;
+}
+
+.mistake{
+  color: red;
+  display: block;
+  margin-bottom: 1.4em;
+}
