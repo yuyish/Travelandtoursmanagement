@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import { FaSearch, FaCalendar } from "react-icons/fa";
 const Home = () => {
   const [startDate, setStartDate] = useState(new Date());
+  // const [calender, setCalender] = useState(false);
+
   return (
     <>
       <div className="HomeMainDiv">
@@ -16,6 +19,7 @@ const Home = () => {
               <div className="card">
                 <div className="search-bar">
                   <div className="search-box">
+                    <FaSearch className="searchIcon" />
                     <input
                       type="text"
                       id="destination"
@@ -25,17 +29,19 @@ const Home = () => {
                     />
                   </div>
                   <div className="date-box">
-                    {/* <input type="text" id="date" name="date"className="inp" placeholder="Select a date" /> */}
+
+
                     <DatePicker
                       selected={startDate}
                       onChange={(date) => setStartDate(date)}
                       className="inp"
+                      id="ip"
                       isClearable
                       showYearDropdown
                       scrollableYearDropdown
                       minDate={new Date()}
                     />
-
+                    <FaCalendar className="DateIcon" />
                   </div>
                   <button id="search-button">Search</button>
                 </div>

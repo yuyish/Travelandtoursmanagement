@@ -7,9 +7,14 @@ const Signup = () => {
   const [ConfirmPassword, setConfirmPassword] = useState("");
   const [status,setStatus]=useState(false);
   const [Detail,setDetail]=useState(false);
+  const [Show,setShow]= useState(false);
 
 
   const navigate = useNavigate();
+
+  const Passshow=()=>{
+    setShow(!Show)
+  }
 
   const data = async () => {
     console.log(email);
@@ -64,8 +69,9 @@ const Signup = () => {
                 placeholder="Email"
                 className="User"
               />
+                <label className="signupPassshow" onClick={Passshow}>{Show? "Hide":"Show"}</label>
               <input
-                type="password"
+                type={Show?"text": "password"}
                 required
                 value={Password}
                 onChange={(e) => setPassword(e.target.value)}
@@ -73,10 +79,10 @@ const Signup = () => {
                 className="User"
               />
               <input
-                type="password"
+                type={Show?"text": "password"}
                 required
                 value={ConfirmPassword}
-                onChange={(e) => setConfirmPassword(e.target.value)}
+                onChange={(e) => setConfirmPassword(e.target.value)} 
                 placeholder="Confirm Password"
                 className="User"
               />

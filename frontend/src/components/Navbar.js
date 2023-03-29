@@ -17,12 +17,6 @@ function Navbar() {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/about" className="nav-link">
-              <i className="fas fa-info-circle"></i>
-              <span className="link-text">About Us</span>
-            </Link>
-          </li>
-          <li className="nav-item">
             <Link to="/Packages" className="nav-link">
               <i className="fas fa-sign-in-alt"></i>
               <span className="link-text">Packages</span>
@@ -35,11 +29,17 @@ function Navbar() {
             </Link>
           </li>
           <li className="nav-item">
+            <Link to="/about" className="nav-link">
+              <i className="fas fa-info-circle"></i>
+              <span className="link-text">About Us</span>
+            </Link>
+          </li>
+          {/* <li className="nav-item">
             <Link to="/contact" className="nav-link">
               <i className="fas fa-envelope"></i>
               <span className="link-text">Contact Us</span>
             </Link>
-          </li>
+          </li> */}
         </ul>
       </div>
       <div className="bttn">

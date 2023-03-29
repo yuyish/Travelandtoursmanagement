@@ -77,19 +77,23 @@ div {
     color: #fff;
     background-color: #ff533c;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: 0.3s ease;
   }
   
   .MainCard button:hover {
     background-color: #666;
   }
   .img1{
+    margin-top: 8px;
+    border-radius: 10px;
     Width: 280px;
     Height: 250pt;
     background-image: url("../public/Images/Kathmandu.jpg");
     background-size:cover;
   }
   .img2{
+    margin-top: 8px;
+    border-radius: 10px;
     Width: 280px;
     Height: 250pt;
     background-image: url("../public/Images/Pokhara.jpg");
@@ -97,6 +101,8 @@ div {
     background-size:cover;
   }
   .img3{
+      margin-top: 8px;
+      border-radius: 10px;
     Width: 280px;
     Height: 250pt;
     background-image: url("../public/Images/Everest.jpg");
@@ -104,4 +110,5 @@ div {
   }
   #seemore{
     color: blue;
+    text-decoration: none;
   }
