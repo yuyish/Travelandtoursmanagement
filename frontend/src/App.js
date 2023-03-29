@@ -2,7 +2,7 @@ import "./App.css";
 import "./HomePage.css"
 import "./NavBar.css"
 import "./Package.css"
-import AppRouter from "./NavrRouter";
+import AppRouter from "./NavRouter";
 
 
 export default function App() {

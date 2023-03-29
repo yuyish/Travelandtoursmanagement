@@ -20,10 +20,10 @@ app.post("/login",async (req,res)=>{
         if(user){
             res.send(user);
         }else{
-            res.send({result: "-----"});
+            res.send({result: "User not found"});
         }
     }else{
-        res.send({result: "No User Found"});
+        res.send({result: "Email or Password not found"});
     }
 })
 

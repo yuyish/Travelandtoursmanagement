@@ -1,15 +1,12 @@
 
 body {
-  background-color: #C2C2C2;
+  background-color: whitesmoke;
 }
 
 .Bar li {
   display: inline-block;
   padding: 6px;
   margin: 12px;
-}
-#forgetpass {
-  text-decoration: none;
 }
 
 .Maindiv {
@@ -27,13 +24,7 @@ body {
   height: 665px;
   width: 700px;
 }
-/* .Login_Content {
-  margin: 10px;
-  padding-top: 3em;
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-} */
+
 
 .Login_Content {
   padding-top: 3em;
@@ -41,6 +32,9 @@ body {
   display: flex;
   flex-direction: column;
   padding-right: 10rem;
+  border-top: inset;
+  border-bottom: outset;
+  border-right: 0.3em inset;
 }
 .ac {
   display: flex;
@@ -54,7 +48,7 @@ body {
 }
 .cont {
   margin-left: 9em;
-  padding-top: 6em;
+  padding-top: 4.6em;
 }
 .User {
   display: block;
@@ -71,7 +65,6 @@ body {
   margin-bottom: 1em;
   text-decoration: none;
   color: rgb(135, 135, 247);
-  margin-left: -6.5em;
 }
 #Btn {
   background-color: #5cc8df;
@@ -87,4 +80,7 @@ body {
 #Btn:hover{
   background-color: #3892ae;
   
+}
+.cc{
+  text-align: left;
 }

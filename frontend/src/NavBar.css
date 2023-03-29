@@ -31,7 +31,7 @@
   }
   
   .nav-link {
-    color:black;
+    color:#656262;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -43,7 +43,10 @@
   }
   
   .nav-link:hover {
-    color: dimgrey;
+    color: rgb(164, 153, 153);
+    translate: 0px -10px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
   }
   
   .fa {
@@ -55,7 +58,7 @@
     color: #82BDC3;
     border: 2px solid #82BDC3;
     border-radius: 4px;
-    padding: 10px 20px;
+    padding: 9px 20px;
     cursor: pointer;
     transition: 0.2s ease-in-out;
     justify-content: right; /* align items in center */
@@ -63,7 +66,8 @@
   }
   
   .btn-login:hover {
-    background-color:rgb(65, 62, 62);
+    background-color:#82BDC3;
+    color: white;
   }
   
   .btn-signup {

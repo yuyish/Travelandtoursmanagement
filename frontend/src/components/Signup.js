@@ -6,6 +6,7 @@ const Signup = () => {
   const [Password, setPassword] = useState("");
   const [ConfirmPassword, setConfirmPassword] = useState("");
   const [status,setStatus]=useState(false);
+  const [Detail,setDetail]=useState(false);
 
 
   const navigate = useNavigate();
@@ -13,7 +14,7 @@ const Signup = () => {
   const data = async () => {
     console.log(email);
     if(Password!=="" && ConfirmPassword!=="" && email!=="" && name!==""){
-      setStatus(false)
+      setDetail(false)
       if(Password===ConfirmPassword){
         setStatus(false)
         let result = await fetch("http://localhost/Signup", {
@@ -34,7 +35,7 @@ const Signup = () => {
       }
     }else{
       // alert("Cannot leave any spaces empty")
-      setStatus(true)
+      setDetail(true)
     }
     
 
@@ -44,7 +45,7 @@ const Signup = () => {
       <>
         <div className="Maindiv">
           <div className="Login_ImageBox">
-            <img src="./Images/tour.jpg" alt={"Loading"} className="Img" />
+            <img src="./Images/Signup.jpg" alt={"Loading"} className="Img" />
           </div>
           <div className="Login_Content">
             <p className="ac"> Already have an account?</p>
@@ -81,6 +82,9 @@ const Signup = () => {
               />
               {
               status? <span className="mistake">Confirm password doesn’t match. Please try again</span> :null
+            }
+              {
+              Detail? <span className="mistake">Please fill all the detail</span> :null
             }
               <button id="Btn" onClick={data} className="User">
                 Sign up

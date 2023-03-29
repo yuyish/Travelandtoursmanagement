@@ -20,7 +20,6 @@ const Login = () => {
       setStatus(false)
       navigate("/");
     }else{
-      // alert("Email or password error");
       setStatus(true);
     }
   };
@@ -28,7 +27,7 @@ const Login = () => {
     <> 
       <div className="Maindiv">
         <div className="Login_ImageBox">
-          <img src="./Images/tour.jpg" alt={"Loading"} className="Img" />
+          <img src="./Images/Signin.jpg" alt={"Loading"} className="Img" />
         </div>
         <div className="Login_Content">
           <p className="ac"> Don't have an account?</p>
@@ -38,10 +37,10 @@ const Login = () => {
             <input type="email" required value={email} onChange={(event)=>setEmail(event.target.value)} placeholder="email" className="User"  />
             <input type="password" required value={Password} onChange={(event)=>setPassword(event.target.value)} placeholder="Password" className="User" />
             {
-              status? <span className="mistake">The username or password is incorrect.</span> :null
+              status? <span className="mistake">The email or password is incorrect.</span> :null
             }
             <a href="/" id="forpass" >Forget your Password?</a>
-            <button id="Btn"  onClick={data} className="User">Sign up</button>
+            <button id="Btn"  onClick={data} className="User">Sign in</button>
           </div>
         </div>
       </div>
