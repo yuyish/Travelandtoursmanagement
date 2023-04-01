@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { useNavigate} from "react-router-dom";
+import { useState } from "react";           // Important imports from packages
+import { useNavigate} from "react-router-dom";            // Important imports from packages
 const Login = () => {
   const [status,setStatus]=useState(false);
   const [email,setEmail]= useState();
@@ -17,7 +17,6 @@ const Login = () => {
         "Content-Type": "application/json",
       },
     });
-
     result = await result.json();
     console.log(result);
     if(result.name){
@@ -51,7 +50,6 @@ const Login = () => {
           </div>
         </div>
       </div>
-
     </>
   );
 };

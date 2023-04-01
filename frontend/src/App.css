@@ -19,8 +19,7 @@ body {
   border-radius: 30PX;
 }
 .Img {
-  border-top-left-radius: 30PX;
-  border-bottom-left-radius: 30PX;
+
   height: 665px;
   width: 700px;
 }
@@ -83,4 +82,9 @@ body {
 }
 .cc{
   text-align: left;
+}
+#Logo{
+  height: 60px;
+  width: 230px;
+  margin-top: 10px;
 }

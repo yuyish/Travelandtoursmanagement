@@ -1,9 +1,9 @@
 import {BrowserRouter,Routes,Route} from "react-router-dom"
-import Login from './components/Login'
-import Signup from './components/Signup'
-import Home from './components/Home'
-import Navbar from "./components/Navbar"
-import Packages from "./components/Packages"
+import Login from './components/Login'      // Importing the file from the folder components
+import Signup from './components/Signup'      // Importing the file from the folder components
+import Home from './components/Home'      // Importing the file from the folder components
+import Navbar from "./components/Navbar"      // Importing the file from the folder components
+import Packages from "./components/Packages"      // Importing the file from the folder components
 function AppRouter() {
   return (
     <div>

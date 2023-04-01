@@ -10,10 +10,7 @@ const Packages = () => {
         <div className="MainCard">
             <div className="card1">
                 <div className='img1'>
-                
                 </div>
-
-                
                 <h4>Kathmandu Nepal 
                     <br /> Package price: 15,000</h4>
                 <a id="seemore" href="/Packages">See more</a>

@@ -1,12 +1,12 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from "react";    // Important imports from packages
+import { Link } from "react-router-dom";    // Important imports from packages
 
 function Navbar() {
   return (
     <>
       <nav className="navbar">
         <div className="navbar-logo">
-          <a href="/"> <img src="" alt="Bagpact" /></a>
+          <a href="/"> <img src="./Images/Logo.png" alt="Bagpact"  id="Logo"/></a>
         </div>
         <div className="navitemmid">
         <ul className="navbar-nav">
@@ -34,15 +34,8 @@ function Navbar() {
               <span className="link-text">About Us</span>
             </Link>
           </li>
-          {/* <li className="nav-item">
-            <Link to="/contact" className="nav-link">
-              <i className="fas fa-envelope"></i>
-              <span className="link-text">Contact Us</span>
-            </Link>
-          </li> */}
         </ul>
-      </div>
-      <div className="bttn">
+      </div><div className="bttn">
       <ul className="navbar-nav">
       <li className="nav-item">
             <Link to="/login" className="nav-link btn-login">
@@ -62,5 +55,4 @@ function Navbar() {
     </>
   );
 }
-
 export default Navbar;

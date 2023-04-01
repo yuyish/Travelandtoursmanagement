@@ -1,9 +1,9 @@
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useState } from "react";             // Important imports from packages
+import { useNavigate } from "react-router-dom";             // Important imports from packages
 const Signup = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [Password, setPassword] = useState("");
+  const [Password, setPassword] = useState("");   // State
   const [ConfirmPassword, setConfirmPassword] = useState("");
   const [status,setStatus]=useState(false);
   const [Detail,setDetail]=useState(false);
@@ -18,7 +18,7 @@ const Signup = () => {
 
   const data = async () => {
     console.log(email);
-    if(Password!=="" && ConfirmPassword!=="" && email!=="" && name!==""){
+    if(Password!=="" && ConfirmPassword!=="" && email!=="" && name!==""){ // Condition weather the input fields is empty or not
       setDetail(false)
       if(Password===ConfirmPassword){
         setStatus(false)
@@ -51,12 +51,10 @@ const Signup = () => {
         <div className="Maindiv">
           <div className="Login_ImageBox">
             <img src="./Images/Signup.jpg" alt={"Loading"} className="Img" />
-          </div>
-          <div className="Login_Content">
+          </div>          <div className="Login_Content">
             <p className="ac"> Already have an account?</p>
             <a href="http://localhost:3000/Login" className="bc">
-              Login to begin an amazing journey
-            </a>
+              Login to begin an amazing journey            </a>
             <div className="cont">
               <h2 className="cc"> Create an Account </h2>
               <form action="/Login" >
@@ -103,5 +101,4 @@ const Signup = () => {
     </div>
   );
 };
-
 export default Signup;

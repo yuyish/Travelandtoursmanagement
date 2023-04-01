@@ -4,8 +4,10 @@ require('./Database/Config');
 const Users=require('./Database/Users');
 const app = express();
 const port=80;
+
 app.use(express.json());
 app.use(cors());
+
 app.post("/Signup",async (req,res)=>{
     let us = new Users(req.body);
     let result = await us.save();
