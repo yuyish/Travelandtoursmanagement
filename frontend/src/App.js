@@ -2,6 +2,7 @@ import "./App.css";
 import "./HomePage.css"
 import "./NavBar.css"
 import "./Package.css"
+import "./Aboutus.css"
 import AppRouter from "./NavRouter";
 
 
