@@ -2,13 +2,15 @@ import {BrowserRouter,Routes,Route} from "react-router-dom"
 import Login from './components/Login'      // Importing the file from the folder components
 import Signup from './components/Signup'      // Importing the file from the folder components
 import Home from './components/Home'      // Importing the file from the folder components
-import Navbar from "./components/Navbar"      // Importing the file from the folder components
+// import Navbar from "./components/Navbar"      // Importing the file from the folder components
 import Packages from "./components/Packages"      // Importing the file from the folder components
+import UserNavbar from "./components/UserNavbar"
 function AppRouter() {
   return (
     <div>
       <BrowserRouter>
-      <Navbar/>
+      {/* <Navbar/> */}
+      <UserNavbar />
             <Routes>
                 <Route path="/" element={<Home/>} />
                 <Route path="/Services" element={<h1>Services</h1>} />

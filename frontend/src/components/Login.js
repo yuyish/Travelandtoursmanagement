@@ -9,7 +9,7 @@ const Login = () => {
   const Passshow=()=>{
     setShow(!Show)
   }
-  const data = async()=>{
+  const db = async()=>{
     let result = await fetch("http://localhost/login",{
       method : "post",
       body: JSON.stringify({email,Password}),
@@ -46,7 +46,7 @@ const Login = () => {
               status? <span className="mistake">The email or password is incorrect.</span> :null
             }
             <a href="/" id="forpass" >Forget your Password?</a>
-            <button id="Btn"  onClick={data} className="User">Sign in</button>
+            <button id="Btn"  onClick={db} className="User">Sign in</button>
           </div>
         </div>
       </div>

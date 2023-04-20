@@ -1,7 +1,13 @@
 import React from "react";    // Important imports from packages
 import { Link } from "react-router-dom";    // Important imports from packages
+import { useState } from 'react';
 
-function Navbar() {
+function UserNavbar() {
+    const [isOpen, setIsOpen] = useState(false);
+  
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  }
   return (
     <>
       <nav className="navbar">
@@ -36,24 +42,17 @@ function Navbar() {
           </li>
         </ul>
       </div>
-      <div className="bttn">
-        <ul className="navbar-nav">
-        <li className="nav-item">
-              <Link to="/login" className="nav-link btn-login">
-                <i className="fas fa-sign-in-alt"></i>
-                <span className="link-text">Login</span>
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/signup" className="nav-link btn-signup">
-                <i className="fas fa-user-plus"></i>
-                <span className="link-text">Signup</span>
-              </Link>
-            </li>
-          </ul>
-      </div>
+        <div className="bttn">
+        <button onClick={toggleMenu} className="bon">Dropdown</button>
+      {isOpen && (
+        <ul>
+          <li>Profile</li>
+          <li>Log Out</li>
+        </ul>
+      )}
+        </div>
       </nav>
     </>
   );
 }
-export default Navbar;
+export default UserNavbar;
