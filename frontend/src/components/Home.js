@@ -4,6 +4,8 @@ import "react-datepicker/dist/react-datepicker.css";
 import { FaSearch, FaCalendar } from "react-icons/fa";
 const Home = () => {
   const [startDate, setStartDate] = useState(new Date());
+  const [searchtext,setsearchtext]= useState();
+
   // const [calender, setCalender] = useState(false);
 
   return (
@@ -22,8 +24,9 @@ const Home = () => {
                     <FaSearch className="searchIcon" />
                     <input
                       type="text"
+                      value={searchtext}
+                      onChange={(event)=>setsearchtext(event.target.value)}
                       id="destination"
-                      name="destination"
                       className="inp"
                       placeholder="Search your destination here"
                     />
