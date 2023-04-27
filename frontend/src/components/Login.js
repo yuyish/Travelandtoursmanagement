@@ -1,6 +1,15 @@
-import { useState } from "react";           // Important imports from packages
+import { useState,useEffect } from "react";           // Important imports from packages
 import { useNavigate} from "react-router-dom";            // Important imports from packages
+import UserNavbar from "./UserNavbar";
+
 const Login = () => {
+  useEffect(()=>{
+    const auth = localStorage.getItem('user');
+    if(auth){
+      navigate('/');
+      <UserNavbar/>
+    }
+  });
   const [status,setStatus]=useState(false);
   const [email,setEmail]= useState();
   const [Password,setPassword]= useState();
@@ -19,11 +28,15 @@ const Login = () => {
     });
     result = await result.json();
     console.log(result);
-    if(result.name){
+    console.log(result.name);
+    if(result){
       setStatus(false)
-      navigate("/");
+      localStorage.setItem("user",JSON.stringify(result));
+      navigate("/Services");
+      
     }else{
       setStatus(true);
+      
     }
   };
   return (

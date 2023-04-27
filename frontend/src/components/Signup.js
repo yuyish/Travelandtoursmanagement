@@ -1,4 +1,4 @@
-import { useState } from "react";             // Important imports from packages
+import { useState} from "react";             // Important imports from packages
 import { useNavigate } from "react-router-dom";             // Important imports from packages
 const Signup = () => {
   let [name, setName] = useState("");

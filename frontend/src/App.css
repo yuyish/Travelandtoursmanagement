@@ -53,7 +53,7 @@ body {
   display: block;
   margin-bottom: 1em;
   padding: 0.5em;
-  width: 150%;
+  width: 100%;
   border: 2px solid grey;
   border-radius: 7px;
   height: 2em;
@@ -73,7 +73,7 @@ body {
   border: none;
   color: white;
   font-size: large;
-  width: 150%;
+  width: 100%;
 }
 
 #Btn:hover{
