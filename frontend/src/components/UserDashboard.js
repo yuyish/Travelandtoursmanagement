@@ -1,11 +1,22 @@
 import React from "react";
 import { FaBars,FaPowerOff,FaCog,FaBook } from "react-icons/fa";
+import { useNavigate} from "react-router-dom";            // Important imports from packages
 
+import Navbar from "./Navbar";
 const UserDashboard = () => {
+const navigate = useNavigate();
   // let imagechange = async()=>{
   // // let image  = document.querySelector(UserImage);
   // }
   
+const logout = ()=>{
+  localStorage.clear();
+  if(localStorage===null){
+    navigate("/Login");
+    <Navbar/>
+  }
+  
+}
   return (
     <div className="Dashboard-Main">
       <div className="dashboard">
@@ -16,7 +27,7 @@ const UserDashboard = () => {
           <button className="user-Botton"><FaBars/><span className="spans">My Tours</span>  </button>
           <button className="user-Botton"><FaBook/><span className="spans1">My Bookings</span></button>
           <button className="user-Botton"><FaCog/> <span className="spans">Settings</span></button>
-          <button className="user-Botton"><FaPowerOff/> <span className="spans">Log out</span></button>
+          <button className="user-Botton" onClick={logout}><FaPowerOff/> <span className="spans">Log out</span></button>
         </div>
       </div>
       <div className="dashboard-contents">
