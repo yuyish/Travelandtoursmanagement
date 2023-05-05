@@ -34,7 +34,29 @@ const CreateLogin =async (req,res)=>{
     }
 };
 
+const UserUpdate = async (req,res)=>{
+    try {
+        
+    let eid = req.params;
+    console.log(eid);
+    eid = eid.email;
+    let update = await Users.findOne({email: `${eid}`});
+    let id = update.id;
+    let updatepf = await Users.findByIdAndUpdate({_id:id}, req.body , {
+        new:true,
+        runValidators : true,
+    });
+    if(!updatepf){
+        return res.status(404).json({msg:"Cannot update the data"});
+    }
+    res.status(200).json({msg:"Successfully updated"});
+    } catch (error) {
+        res.status(500).send({msg: error.message});
+    }
+}
+
 module.exports={
     CreateSignup,
-    CreateLogin
+    CreateLogin,
+    UserUpdate
 }

@@ -1,12 +1,13 @@
 import React from "react";    // Important imports from packages
 import { Link } from "react-router-dom";    // Important imports from packages
-
+import logo from '../assets/Images/Logo.png'
 function Navbar() {
   return (
     <>
       <nav className="navbar">
         <div className="navbar-logo">
-          <a href="/"> <img src="./Images/Logo.png" alt="Bagpact"  id="Logo"/></a>
+        {/* E:\Tour And Travel Management System\frontend\src\assets\Images\Logo.png */}
+          <a href="/"> <img src={logo} alt="Bagpact"  id="Logo"/></a>
         </div>
         <div className="navitemmid">
         <ul className="navbar-nav">

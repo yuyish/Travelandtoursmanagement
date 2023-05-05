@@ -1,8 +1,10 @@
 import { useState,useEffect } from "react";           // Important imports from packages
 import { useNavigate} from "react-router-dom";            // Important imports from packages
 import UserNavbar from "./UserNavbar";
+import loginavtar from '../assets/Images/Signin.jpg';
 
 const Login = () => {
+  const navigate = useNavigate();
   useEffect(()=>{
     const auth = localStorage.getItem('user');
     if(auth){
@@ -14,7 +16,6 @@ const Login = () => {
   const [email,setEmail]= useState();
   const [Password,setPassword]= useState();
   const [Show,setShow]= useState(false);
-  const navigate = useNavigate();
   const Passshow=()=>{
     setShow(!Show)
   }
@@ -29,10 +30,10 @@ const Login = () => {
     result = await result.json();
     console.log(result);
     console.log(result.name);
-    if(result){
+    if(result.name){
       setStatus(false)
-      localStorage.setItem("user",JSON.stringify(result));
       navigate("/Services");
+      localStorage.setItem("user",JSON.stringify(result));
       
     }else{
       setStatus(true);
@@ -42,7 +43,7 @@ const Login = () => {
     <> 
       <div className="Maindiv">
         <div className="Login_ImageBox">
-          <img src="./Images/Signin.jpg" alt={"Loading"} className="Img" />
+          <img src={loginavtar} alt={"Loading"} className="Img" />
         </div>
         <div className="Login_Content">
           <p className="ac"> Don't have an account?</p>

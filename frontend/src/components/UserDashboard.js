@@ -1,28 +1,58 @@
-import React from "react";
+import {useState} from "react";
 import { FaBars,FaPowerOff,FaCog,FaBook } from "react-icons/fa";
-import { useNavigate} from "react-router-dom";            // Important imports from packages
-
+import { useNavigate } from "react-router-dom";
+import imageavatar from "../assets/Images/profileimg.png"
 import Navbar from "./Navbar";
+import axios from 'axios';
 const UserDashboard = () => {
 const navigate = useNavigate();
-  // let imagechange = async()=>{
-  // // let image  = document.querySelector(UserImage);
-  // }
-  
-const logout = ()=>{
-  localStorage.clear();
-  if(localStorage===null){
-    navigate("/Login");
-    <Navbar/>
+const url = "http://localhost/profile/Bishal@test.com";  // dummy url
+
+  const [postImage, setPostImage] = useState( { myFile : ""})
+
+  const logout = ()=>{
+    localStorage.clear();
+    if(localStorage===null){
+      navigate('/');
+      <Navbar/>
+      console.log("clicked");
+    }
+    
+  }
+  const createPost = async (newImage) => {
+    try{
+      await axios.put(url, newImage)
+    }catch(error){
+      console.log(error)
+    }
   }
   
+
+
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  createPost(postImage)
+  // let rm = await fetch()
+  console.log("Uploaded")
 }
+
+const handleFileUpload = async (e) => {
+  const file = e.target.files[0];
+  const base64 = await convertToBase64(file);
+  console.log(base64)
+  setPostImage({ ...postImage, myFile : base64 })
+}
+
   return (
     <div className="Dashboard-Main">
       <div className="dashboard">
         <h2>My Profile</h2>
         <div className="userprofile">
-          <img src="" alt=" " className="UserImage" />
+          <div className="userimageprofile">
+          <label htmlFor="choose" className="UserImage">
+          <img src={postImage.myFile ||imageavatar} alt=" "  />  
+          </label>
+          </div>
           <p>Name</p>
           <button className="user-Botton"><FaBars/><span className="spans">My Tours</span>  </button>
           <button className="user-Botton"><FaBook/><span className="spans1">My Bookings</span></button>
@@ -35,7 +65,7 @@ const logout = ()=>{
         <div className="detail">
           <div className="subdiv">
             <div className="user-contents">
-              <label>First Name</label>
+              <label>Full Name</label>
               <input
                 type="text"
                 placeholder="Enter first name"
@@ -44,10 +74,10 @@ const logout = ()=>{
               />
             </div>
             <div className="user-contents">
-              <label>Last Name</label>
+              <label>Password</label>
               <input
-                type="text"
-                placeholder="Enter Last name"
+                type="password"
+                placeholder="Enter Password"
                 className="box-subdiv"
                 required
               />
@@ -108,11 +138,10 @@ const logout = ()=>{
           </div>
           </div>
           <div className="user-contents">
-            <label>Upload Image</label>
-            <input type="file" id="choose" accept="image/png, image/jpeg" required />
+            <input type="file" id="choose" accept=".jpg , .png, .jpeg" required onChange={(e) => handleFileUpload(e)} />
           </div>
           <div className="buttondiv">
-          <button id="botton">Update profile</button>
+          <button type="submit" id="botton" onClick={handleSubmit}>Update profile</button>
           </div>
         </div>
       </div>
@@ -121,3 +150,16 @@ const logout = ()=>{
 };
 
 export default UserDashboard;
+
+function convertToBase64(file){
+  return new Promise((resolve, reject) => {
+    const fileReader = new FileReader();
+    fileReader.readAsDataURL(file);
+    fileReader.onload = () => {
+      resolve(fileReader.result)
+    };
+    fileReader.onerror = (error) => {
+      reject(error)
+    }
+  })
+}

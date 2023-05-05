@@ -2,7 +2,7 @@ import React from 'react'
 const Packages = () => {
   return (
     <>
-        <div>
+        <div className="PackageContent">
         <h1 className='head'>Our</h1>
         <h1 className='PackHeading'>Popular Packages</h1>  
         <h3 className='PackHeading'>Here are some popular packages you might  want to consider.</h3>

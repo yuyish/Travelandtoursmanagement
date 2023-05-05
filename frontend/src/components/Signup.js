@@ -1,5 +1,7 @@
 import { useState} from "react";             // Important imports from packages
 import { useNavigate } from "react-router-dom";             // Important imports from packages
+import Signupavtar from '../assets/Images/Signup.jpg';
+
 const Signup = () => {
   let [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -62,8 +64,9 @@ const Signup = () => {
       <>
         <div className="Maindiv">
           <div className="Login_ImageBox">
-            <img src="./Images/Signup.jpg" alt={"Loading"} className="Img" />
-          </div>          <div className="Login_Content">
+            <img src={Signupavtar} alt={"Loading"} className="Img" />
+          </div>         
+           <div className="Login_Content">
             <p className="ac"> Already have an account?</p>
             <a href="http://localhost:3000/Login" className="bc">
               Login to begin an amazing journey            </a>

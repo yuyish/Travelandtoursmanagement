@@ -17,15 +17,23 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
+    
+}
+.userimageprofile{
+  height: 250px;
+  width: 250px;
+  border-radius: 100%;
+  overflow: hidden;
+  display: flex;  
+  object-fit: cover;
 }
 .UserImage{
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
-    background: #dfdfdf;
-    background-image: url("../public/Images/profileimg.png");
-    background-size: cover;
-    
+    max-width: inherit;
+    max-height: inherit;  
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+
 }
 .spans{
   padding-left: 20px;
@@ -118,8 +126,8 @@
     background-color: #027baf;
   }
   input[type="file"] {
-    width: 50%;
-
+    /* width: 50%; */
+    display: none;
 }
 .buttondiv{
     display: flex;

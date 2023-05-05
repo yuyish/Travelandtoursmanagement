@@ -1,6 +1,7 @@
 import React from "react";    // Important imports from packages
 import { Link } from "react-router-dom";    // Important imports from packages
 import { useState } from 'react';
+import logo from '../assets/Images/Logo.png'
 
 function UserNavbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +13,7 @@ function UserNavbar() {
     <>
       <nav className="navbar">
         <div className="navbar-logo">
-          <a href="/"> <img src="./Images/Logo.png" alt="Bagpact"  id="Logo"/></a>
+          <a href="/"> <img src={logo} alt="Bagpact"  id="Logo"/></a>
         </div>
         <div className="navitemmid">
         <ul className="navbar-nav">
@@ -50,7 +51,7 @@ function UserNavbar() {
           <li>Log Out</li>
         </ul>
       )}
-        </div>
+        </div> 
       </nav>
     </>
   );

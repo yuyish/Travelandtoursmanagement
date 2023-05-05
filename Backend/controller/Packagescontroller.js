@@ -3,6 +3,7 @@ const Package=require('../Model/Package');
 const CreatePackage=async(req,res)=>{
     try {
         let Task = await Package.create(req.body);
+        Task.save();
         res.status(200).send(Task);
     } catch (error) {
         res.status(500).send({msg: error.message}); 
