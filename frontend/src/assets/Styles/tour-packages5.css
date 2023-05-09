@@ -534,73 +534,70 @@
 }
 
 .tour-Box1 {
-  width: auto;
+  position: absolute;
+  top: 50px;
+  width: 800px;
   height: auto;
   display: flex;
-  justify-content: space-between;
+  gap: 2rem;
+  border: 1px solid black;
+  border-radius :10px
 }
-.tour-box2{
-  top: 760px;
-  left: 430px;
-  width: 800px;
-  height: 281px;
+.tour-Box2{ 
   position: absolute;
-  border-color: rgba(209, 209, 209, 1);
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 5px;
+  top: 350px;
+  width: 800px;
+  height: auto;
+  display: flex;
+  gap: 2rem;
+  border: 1px solid black;
+  border-radius :10px
 }
-.tour-box3{
-  top: 1060px;
-  left: 430px;
-  width: 800px;
-  height: 281px;
+.tour-Box3{
   position: absolute;
-  border-color: rgba(209, 209, 209, 1);
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 5px;
+  top: 650px;
+  width: 800px;
+  height: auto;
+  display: flex;
+  gap: 2rem;
+  border: 1px solid black;
+  border-radius :10px
+
 }
-.tour-box4{
-  top: 1360px;
-  left: 430px;
-  width: 800px;
-  height: 281px;
+.tour-Box4{
   position: absolute;
-  border-color: rgba(209, 209, 209, 1);
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 5px;
+  top: 950px;
+  width: 800px;
+  height: auto;
+  display: flex;
+  gap: 2rem;
+  border: 1px solid black;
+  border-radius :10px
 }
-.tour-box5{
-  top: 1660px;
-  left: 430px;
-  width: 800px;
-  height: 281px;
+.tour-Box5{
   position: absolute;
-  border-color: rgba(209, 209, 209, 1);
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 5px;
+  top: 1250px;
+  width: 800px;
+  height: auto;
+  display: flex;
+  gap: 2rem;
+  border: 1px solid black;
+  border-radius :10px
 }
-.tour-box6{
-  top: 1960px;
-  left: 430px;
-  width: 800px;
-  height: 281px;
+.tour-Box6{
   position: absolute;
-  border-color: rgba(209, 209, 209, 1);
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 5px;
+  top: 1550px;
+  width: 800px;
+  height: auto;
+  display: flex;
+  gap: 2rem;
+  border: 1px solid black;
+  border-radius :10px
 }
 .tour-info {
     color: rgba(45, 26, 26, 1);
-    width: 354px;
-    height: auto;
-    /* position: absolute; */
     font-size: small;
-    text-align: left;
+    text-align: justify;
     margin-bottom: 1rem;
 }
 .tour-review {
@@ -615,12 +612,13 @@
   height: auto;
   font-size: 18px;
   font-style: Bold;
+  text-align: left;
 }
 .rates{
   display: flex;
-  justify-content: space-between;
   height: auto;
   margin-bottom: 1rem;
+  gap: 2rem;
 }
 .Pack-rate {
       color: rgba(255, 83, 59, 1);
@@ -673,13 +671,44 @@
   color: rgba(45, 26, 26, 1);
   height: auto;
   font-size: small;
+}.container-image-div{
+  width: auto;
+  height: fit-content;
 }
-
 
 .Pack-Image1 {
   width: 400px;
-  height: 281px;
-  border-radius: 5px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.Pack-Image2 {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.Pack-Image3 {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.Pack-Image4 {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.Pack-Image5 {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
+.Pack-Image6 {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
 }
 
 .cp0 {
@@ -701,16 +730,17 @@
 .mainContainer-extended{
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
   position: absolute;
   top: 458px;
   left: 430px;
-  width: 800px;
   height: auto;
   flex-wrap: wrap;
 }
 .center{
   position: absolute;
-  top: 60%;
-  right: 50%;
+  top: 70%;
+  right: 55%;
+}
+.pack-subdiv{
+  max-width: 320px;
 }

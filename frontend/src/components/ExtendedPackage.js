@@ -1,24 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 // import { Buffer } from "buffer";
 import { IoIosPin } from "react-icons/io";
 import Box1 from "../assets/Images/Box1.png";
 // import Box2 from '../assets/Images/Box2.png';
 const ExtendedPackage = ({ pack,index }) => {
-  // console.log(index+1);
-  const className = `tour-Box${index + 1}`;
-  console.log(className);
+  const className = `tour-Box${index+1}`;
+  const imgclassname = `Pack-Image${index+1}`;
+
+  const [book,setBook]=useState();
   return (
     <div className="mainContainer-extended">
         {console.log(index+1)}
         <div className={className}>
-          <div>
+          <div className="container-image-div">
               <img
                 alt="Image1"
                 src={Box1}
-                className="Pack-Image1"
+                className={imgclassname}
               />
           </div>
-          <div>
+          <div className="pack-subdiv">
             <div className="tour-review">
               <p>Great Tour</p>
             </div>

@@ -54,12 +54,12 @@ const Home = (props) => {
           <div className="sub-menu-wrap">
             <div className="sub-menu">
             <span className="username">Hello {name}</span>
-              <Link className="sub-menu-link" >
+              <Link to='/MyAccounts' className="sub-menu-link" >
                 <img src={user} alt="user" />
                 <p>My Accounts</p>
                 <span>&gt;</span>
               </Link>
-              <Link className="sub-menu-link">
+              <Link to="/" className="sub-menu-link">
                 <img src={booking} alt="booking" />
                 <p>Bookings</p>
                 <span>&gt;</span>

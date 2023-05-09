@@ -86,7 +86,9 @@ const TourPackages5 = (props) => {
           <>
           {Package.map((pack,index)=>{
             return (
-              <ExtendedPackage key={pack._id} pack={pack} index={index} />
+              <div className="mainContainernon-extended">
+                <ExtendedPackage key={pack._id} pack={pack} index={index} />
+              </div>
             )
           })}
           </>

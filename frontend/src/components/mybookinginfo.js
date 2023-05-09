@@ -1,5 +1,5 @@
 import styles from "../assets/Styles/mybookinginfo.css";
-import global from "../assets/Styles/global.css";
+// import global from "../assets/Styles/global.css";
 
 const MyBookingInfo = () => {
   return (

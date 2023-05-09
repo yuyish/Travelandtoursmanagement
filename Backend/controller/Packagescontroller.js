@@ -25,7 +25,7 @@ const CreatePackage=(req,res)=>{
                     price:req.body.price,
                     description:req.body.description,
                     Image:{
-                        data: fs.readFileSync('packagesImages/'+req.file.filename),
+                        data: fs.readFileSync('packagesImages/'+ req.file.filename), 
                         contentType:'image/png '
                     }    
                 });

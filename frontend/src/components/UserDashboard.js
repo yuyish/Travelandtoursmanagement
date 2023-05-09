@@ -1,4 +1,4 @@
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import { FaBars,FaPowerOff,FaCog,FaBook } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import imageavatar from "../assets/Images/profileimg.png"
@@ -11,14 +11,18 @@ const url = "http://localhost/profile/Bishal@test.com";  // dummy url
   const [postImage, setPostImage] = useState( { myFile : ""})
 
   const logout = ()=>{
-    localStorage.clear();
-    if(localStorage===null){
-      navigate('/');
-      <Navbar/>
-      console.log("clicked");
-    }
+    // localStorage.clear();
+    // if(localStorage===null){
+    //   navigate('/login');
+    //   <Navbar/>
+    // }
+    console.log("clicked");
     
   }
+
+  useEffect(()=>{
+    console.log("hello");
+  },[logout])
   const createPost = async (newImage) => {
     try{
       await axios.put(url, newImage)
