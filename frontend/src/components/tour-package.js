@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 import loadingimage from "../assets/Images/loader.gif";
 export const URL = process.env.REACT_APP_BACKEND_URL;
 
-const TourPackages5 = (props) => {
+const TourPackages5 = () => {
   const [Package, setPackage] = useState([]);
   const [isLoading, setisLoading] = useState(false);
 
@@ -14,7 +14,6 @@ const TourPackages5 = (props) => {
     setisLoading(true);
     try {
       const { data } = await axios.get(`${URL}/api/readPackage`);
-      console.log(data);
       setPackage(data);
     } catch (error) {
       toast.error(error.message);

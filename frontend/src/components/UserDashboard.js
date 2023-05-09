@@ -1,8 +1,7 @@
-import {useEffect, useState} from "react";
+import {useState} from "react";
 import { FaBars,FaPowerOff,FaCog,FaBook } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import imageavatar from "../assets/Images/profileimg.png"
-import Navbar from "./Navbar";
 import axios from 'axios';
 const UserDashboard = () => {
 const navigate = useNavigate();
@@ -10,20 +9,17 @@ const url = "http://localhost/profile/Bishal@test.com";  // dummy url
 
   const [postImage, setPostImage] = useState( { myFile : ""})
 
-  const logout = ()=>{
+  const handleLogout = () => {
+    // clear local storage and set loggedIn to false
     localStorage.clear();
-    // if(localStorage===null){
-      navigate('/login');
-      window.location.reload();
-    //   <Navbar/>
-    // }
-    console.log("clicked");
-    
-  }
 
-  useEffect(()=>{
-    console.log("hello");
-  },[logout])
+    // navigate to home page
+    navigate("/login");
+
+    // you can also force a page reload to ensure that all components re-render
+    window.location.reload();
+  };
+
   const createPost = async (newImage) => {
     try{
       await axios.put(url, newImage)
@@ -60,9 +56,9 @@ const handleFileUpload = async (e) => {
           </div>
           <p>Name</p>
           <button className="user-Botton"><FaBars/><span className="spans">My Tours</span>  </button>
-          <button className="user-Botton"><FaBook/><span className="spans1">My Bookings</span></button>
+          <button className="user-Botton" onClick={()=>navigate('/MyBookings')}><FaBook/><span className="spans1">My Bookings</span></button>
           <button className="user-Botton"><FaCog/> <span className="spans">Settings</span></button>
-          <button className="user-Botton" onClick={logout}><FaPowerOff/> <span className="spans">Log out</span></button>
+          <button className="user-Botton" onClick={handleLogout}><FaPowerOff/> <span className="spans">Log out</span></button>
         </div>
       </div>
       <div className="dashboard-contents">

@@ -10,6 +10,10 @@ import Aboutus from "./components/Aboutus"
 import UserDashboard from "./components/UserDashboard";
 import TourPackages5 from "./components/tour-package"
 import MyBookingInfo from "./components/mybookinginfo"
+import BookEnquiryOverView from "./components/BookEnquiryOverview"
+import BookEnquiry from './components/BookingEnquiry'
+import BookingItenary from "./components/BookingItenary"
+
 function AppRouter() {
   return (
     <div>
@@ -18,7 +22,11 @@ function AppRouter() {
             <Routes>
                 <Route path="/" element={<Home/>} />
                 {/* <Route path="/Services" element={<UserDashboard/>} /> */}
+                <Route path="/BookingOverview" element={<BookEnquiryOverView/>} />
                 <Route path="/Services" element={<MyBookingInfo/>} />
+                <Route path="/Enquiry" element={<BookEnquiry/>} />
+                {/* <Route path="/Itenary" element={<AllBooking/>} /> */}
+                <Route path="/Itenary" element={<BookingItenary/>} />
                 <Route path="/MyAccounts" element={<UserDashboard/>} />
                 {/* <Route path="/Contact" element={<h1>Contactus page</h1>} /> */}
                 <Route path="/Packages" element={<TourPackages5/>} />

@@ -37,7 +37,6 @@ function Navbar() {
 
     // navigate to home page
     navigate("/login");
-
     // you can also force a page reload to ensure that all components re-render
     window.location.reload();
   };
@@ -110,8 +109,8 @@ function Navbar() {
                       <p>Settings</p>
                       <span>&gt;</span>
                     </Link>
-                    <Link className="sub-menu-link">
-                      <img src={Logout} alt="logout" onClick={handleLogout} />
+                    <Link className="sub-menu-link" onClick={handleLogout}>
+                      <img src={Logout} alt="logout"  />
                       <p>Log Out</p>
                       <span>&gt;</span>
                     </Link>

@@ -1,15 +1,44 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import BookEnquiryOverView from "./BookEnquiryOverview";
+import { toast } from "react-toastify";
 // import { Buffer } from "buffer";
 import { IoIosPin } from "react-icons/io";
 import Box1 from "../assets/Images/Box1.png";
+import axios from "axios";
+import { URL } from "./tour-package";
 // import Box2 from '../assets/Images/Box2.png';
 const ExtendedPackage = ({ pack,index }) => {
+  const navigate = useNavigate();
   const className = `tour-Box${index+1}`;
-  const imgclassname = `Pack-Image${index+1}`;
+  const imgclassname = `Pack-Image${index+1}`; 
+  const name =JSON.parse(localStorage.getItem("user"))
+  const [buttonClicked, setButtonClicked] = useState(false);
 
-  const [book,setBook]=useState();
+  const handlebook = async()=>{
+    try {
+      const book = await axios.post(`${URL}/bookings/${name._id}/${pack._id}`);
+      if(book){
+        toast.success("You have successfully booked the Package");
+        console.log(book);
+      }
+    } catch (error) {
+      toast.error(error.message);
+    }
+    // navigate('/MyAccounts');
+  }
+  const handleenquiry = ()=>{
+    setButtonClicked(true);
+    navigate('/BookingOverview');
+  }
   return (
-    <div className="mainContainer-extended">
+    <>
+    {
+      buttonClicked ?(
+        <BookEnquiryOverView pack = {pack}/>
+      ):(
+        <>
+        <div className="mainContainer-extended">
         {console.log(index+1)}
         <div className={className}>
           <div className="container-image-div">
@@ -55,12 +84,19 @@ const ExtendedPackage = ({ pack,index }) => {
               </span>
             </div>
             <div className="pack-buttons">
-              <button className="tour-button1">Book</button>
-              <button className="tour-button2">Enquiry</button>
+              <button className="tour-button1" onClick={handlebook}>Book</button>
+              <button className="tour-button2" onClick={handleenquiry}>Enquiry</button>
             </div>
           </div>
         </div>
     </div>
+
+        </>
+
+      )
+    }
+         </>
+   
   );
 };
 
