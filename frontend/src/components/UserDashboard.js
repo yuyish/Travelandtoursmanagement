@@ -11,9 +11,10 @@ const url = "http://localhost/profile/Bishal@test.com";  // dummy url
   const [postImage, setPostImage] = useState( { myFile : ""})
 
   const logout = ()=>{
-    // localStorage.clear();
+    localStorage.clear();
     // if(localStorage===null){
-    //   navigate('/login');
+      navigate('/login');
+      window.location.reload();
     //   <Navbar/>
     // }
     console.log("clicked");

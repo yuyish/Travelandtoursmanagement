@@ -1,6 +1,5 @@
 import { useState,useEffect } from "react";           // Important imports from packages
 import { useNavigate} from "react-router-dom";            // Important imports from packages
-import UserNavbar from "./UserNavbar";
 import loginavtar from '../assets/Images/Signin.jpg';
 import { URL } from "./tour-package";
 import {toast} from 'react-toastify';
@@ -11,7 +10,6 @@ const Login = () => {
     const auth = localStorage.getItem('user');
     if(auth){
       navigate('/');
-      <UserNavbar/>
     }
   });
   const [status,setStatus]=useState(false);
@@ -34,8 +32,10 @@ const Login = () => {
     console.log(result.name);
     if(result.name){
       setStatus(false)
-      navigate("/Services");
+      navigate("/");
       localStorage.setItem("user",JSON.stringify(result));
+      window.location.reload();
+
       
     }else{
       toast.error("Password or email incorrect");

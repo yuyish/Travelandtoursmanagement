@@ -5,20 +5,16 @@ import Signup from './components/Signup'      // Importing the file from the fol
 import Home from './components/Home'      // Importing the file from the folder components
 import Navbar from "./components/Navbar"      // Importing the file from the folder components
 // import Packages from "./components/Package"      // Importing the file from the folder components
-import UserNavbar from "./components/UserNavbar"
+// import UserNavbar from "./components/UserNavbar"
 import Aboutus from "./components/Aboutus"
 import UserDashboard from "./components/UserDashboard";
 import TourPackages5 from "./components/tour-package"
 import MyBookingInfo from "./components/mybookinginfo"
 function AppRouter() {
-  const auth = localStorage.getItem("user");
   return (
     <div>
       <BrowserRouter>
-      
-{
-  auth ? <UserNavbar/> : <Navbar/>
-}    
+          <Navbar/>  
             <Routes>
                 <Route path="/" element={<Home/>} />
                 {/* <Route path="/Services" element={<UserDashboard/>} /> */}

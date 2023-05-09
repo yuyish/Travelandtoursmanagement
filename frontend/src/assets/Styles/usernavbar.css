@@ -74,10 +74,10 @@
 
   }
   .sub-menu-wrap{
-    position: absolute;
+    /* position: absolute; */
     width: 320px;
-    top: 90%;
-    right: 0%;
+    /* top: 90%;
+    right: 0%; */
     max-height: 0px;
     transition: max-height 0.5s;
   }
@@ -88,9 +88,8 @@
     background: white;
     padding: 20px;
     margin: 10px;
-    z-index: auto;
-    position: fixed;
-        /* From https://css.glass */
+    /* z-index: auto; */
+    position: initial;
     background: rgba(255, 255, 255, 0.09);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
