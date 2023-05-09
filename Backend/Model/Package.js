@@ -16,6 +16,10 @@ const PackageSchema = mongoose.Schema({
     description:{
         type:String,
         required: [true,"Please add a description"]
+    },
+    Image:{
+        data:Buffer,
+        contentType:String
     }
 });
 module.exports = mongoose.model("Packages",PackageSchema);

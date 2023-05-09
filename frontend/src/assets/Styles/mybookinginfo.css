@@ -1,0 +1,450 @@
+.myBookingInfoChild {
+    position: absolute;
+    top: 186px;
+    left: 452px;
+    border-radius: 10px;
+    border: 2px solid var(--color-lightgray);
+    box-sizing: border-box;
+    width: 778px;
+    height: 283px;
+  }
+  .bookingInformation {
+    position: absolute;
+    top: 123px;
+    left: 51px;
+    font-size: 25px;
+    font-family: var(--font-inter);
+    color: var(--color-gray-100);
+  }
+  .travelInfo {
+    position: absolute;
+    top: 209px;
+    left: 483px;
+    font-size: var(--font-size-5xl);
+    font-family: var(--font-inter-tight);
+    color: var(--color-darkslategray);
+  }
+  .abcTrek,
+  .bookingName,
+  .hotelRadisson,
+  .mahindraJeep {
+    position: absolute;
+    left: 468px;
+    display: flex;
+    align-items: center;
+    height: 30px;
+  }
+  .bookingName {
+    top: 266px;
+    font-size: var(--font-size-lgi);
+    font-weight: 600;
+    width: 160px;
+  }
+  .abcTrek,
+  .hotelRadisson,
+  .mahindraJeep {
+    top: 318px;
+    width: 173px;
+  }
+  .hotelRadisson,
+  .mahindraJeep {
+    top: 371px;
+  }
+  .hotelRadisson {
+    top: 424px;
+    left: 470px;
+    width: 133px;
+  }
+  .accommodation,
+  .april2023,
+  .april20231,
+  .transportation,
+  .travel {
+    position: absolute;
+    top: 318px;
+    left: 660px;
+    display: flex;
+    align-items: center;
+    width: 66px;
+    height: 30px;
+  }
+  .accommodation,
+  .april2023,
+  .april20231,
+  .transportation {
+    top: 371px;
+    width: 137px;
+  }
+  .accommodation,
+  .april2023,
+  .april20231 {
+    top: 424px;
+    width: 156px;
+  }
+  .april2023,
+  .april20231 {
+    top: 318px;
+    left: 836px;
+    width: 122px;
+  }
+  .april20231 {
+    top: 371px;
+    width: 133px;
+  }
+  .april20232,
+  .bookingFor,
+  .date,
+  .price,
+  .status,
+  .usd78,
+  .usd950,
+  .usd9501 {
+    position: absolute;
+    top: 424px;
+    left: 838px;
+    display: flex;
+    align-items: center;
+    width: 122px;
+    height: 30px;
+  }
+  .bookingFor,
+  .date,
+  .price,
+  .status,
+  .usd78,
+  .usd950,
+  .usd9501 {
+    top: 318px;
+    left: 985px;
+    width: 90px;
+  }
+  .bookingFor,
+  .date,
+  .price,
+  .status,
+  .usd78,
+  .usd9501 {
+    top: 371px;
+    width: 97px;
+  }
+  .bookingFor,
+  .date,
+  .price,
+  .status,
+  .usd9501 {
+    top: 424px;
+    left: 987px;
+    width: 90px;
+  }
+  .bookingFor,
+  .date,
+  .price,
+  .status {
+    top: 266px;
+    left: 660px;
+    font-size: var(--font-size-lgi);
+    font-weight: 600;
+    width: 144px;
+  }
+  .date,
+  .price,
+  .status {
+    left: 836px;
+    width: 57px;
+  }
+  .price,
+  .status {
+    left: 985px;
+    width: 61px;
+  }
+  .status {
+    top: 265px;
+    left: 1092px;
+    width: 85px;
+  }
+  .myBookingInfoItem {
+    position: absolute;
+    top: 248.5px;
+    left: 49px;
+    width: 358px;
+    height: 1px;
+  }
+  .myBookingInfoInner {
+    position: absolute;
+    top: 248px;
+    left: 452px;
+    width: 778px;
+    height: 2px;
+  }
+  .myBookingInfoChild1,
+  .myBookingInfoChild2,
+  .vectorIcon {
+    position: absolute;
+    top: 303px;
+    left: 452px;
+    width: 778px;
+    height: 2px;
+  }
+  .myBookingInfoChild1,
+  .myBookingInfoChild2 {
+    top: 358px;
+  }
+  .myBookingInfoChild2 {
+    top: 413px;
+  }
+  .personalInformation {
+    position: absolute;
+    top: 23px;
+    left: 32px;
+    font-family: var(--font-inter-tight);
+  }
+  .groupChild,
+  .groupIcon,
+  .vectorIcon1,
+  .vectorIcon2,
+  .vectorIcon3 {
+    position: absolute;
+    height: 10.6%;
+    width: 13.85%;
+    top: 44.88%;
+    right: 85.28%;
+    bottom: 44.52%;
+    left: 0.87%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .groupChild,
+  .groupIcon,
+  .vectorIcon2,
+  .vectorIcon3 {
+    height: 9.89%;
+    width: 11.26%;
+    top: 0.35%;
+    right: 87.88%;
+    bottom: 89.75%;
+  }
+  .groupChild,
+  .groupIcon,
+  .vectorIcon3 {
+    height: 11.84%;
+    width: 14.5%;
+    top: 66.7%;
+    right: 85.17%;
+    bottom: 21.47%;
+    left: 0.32%;
+  }
+  .groupChild,
+  .vectorIcon3 {
+    height: 10.38%;
+    width: 12.12%;
+    top: 89.4%;
+    right: 87.01%;
+    bottom: 0.22%;
+    left: 0.87%;
+  }
+  .groupChild {
+    height: 7.77%;
+    width: 15.15%;
+    top: 23.67%;
+    right: 84.85%;
+    bottom: 68.55%;
+    left: 0;
+  }
+  .editProfile,
+  .logout,
+  .myFavourite,
+  .myTours,
+  .settings {
+    position: absolute;
+    top: 0;
+    left: 66px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    width: 142px;
+    height: 30px;
+  }
+  .logout,
+  .myFavourite,
+  .myTours,
+  .settings {
+    top: 63px;
+  }
+  .logout,
+  .myFavourite,
+  .settings {
+    top: 127px;
+    width: 165px;
+  }
+  .logout,
+  .settings {
+    top: 190px;
+    width: 142px;
+  }
+  .logout {
+    top: 253px;
+    width: 87px;
+  }
+  .vectorParent {
+    position: absolute;
+    height: 47.01%;
+    width: 64.35%;
+    top: 50%;
+    right: 27.3%;
+    bottom: 2.99%;
+    left: 8.36%;
+    font-size: var(--font-size-3xl);
+    color: var(--color-dimgray-100);
+  }
+  .saujanRijal {
+    position: absolute;
+    top: 128px;
+    left: 0;
+    font-weight: 500;
+  }
+  .groupItem {
+    position: absolute;
+    top: 0;
+    left: 13px;
+    width: 116px;
+    height: 116px;
+  }
+  .saujanRijalParent {
+    position: absolute;
+    top: 94px;
+    left: 109px;
+    width: 142px;
+    height: 164px;
+    color: var(--color-gray-100);
+  }
+  .groupInner,
+  .personalInformationParent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 359px;
+    height: 602px;
+  }
+  .personalInformationParent {
+    top: 186px;
+    left: 49px;
+    font-size: var(--font-size-5xl);
+    color: var(--color-darkslategray);
+  }
+  .rectangleDiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: var(--br-8xs);
+    background-color: var(--color-forestgreen);
+    width: 108px;
+    height: 26px;
+  }
+  .completed {
+    position: absolute;
+    top: 3px;
+    left: 19px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    width: 71px;
+    height: 20px;
+  }
+  .myBookingInfoChild3,
+  .rectangleParent {
+    position: absolute;
+    left: 1092px;
+    width: 108px;
+    height: 26px;
+  }
+  .rectangleParent {
+    top: 320px;
+    font-size: var(--font-size-xs);
+    color: var(--color-white);
+  }
+  .myBookingInfoChild3 {
+    top: 373px;
+    border-radius: var(--br-8xs);
+    background-color: var(--color-forestgreen);
+  }
+  .completed1,
+  .rectangleGroup {
+    position: absolute;
+    font-size: var(--font-size-xs);
+    color: var(--color-white);
+  }
+  .completed1 {
+    top: 376px;
+    left: 1111px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    width: 70px;
+    height: 20px;
+  }
+  .rectangleGroup {
+    top: 426px;
+    left: 1094px;
+    width: 108px;
+    height: 26px;
+  }
+  .groupChild2 {
+    position: absolute;
+    top: 42.5px;
+    left: 0;
+    width: 1280px;
+    height: 3px;
+  }
+  .homeProfile {
+    position: absolute;
+    top: 0;
+    left: 830px;
+    font-weight: 500;
+  }
+  .vectorGroup {
+    position: absolute;
+    top: 123px;
+    left: 0;
+    width: 1279.5px;
+    height: 44px;
+    font-size: 20px;
+    color: #706f6f;
+  }
+  .lineDiv,
+  .myBookingInfoChild4,
+  .myBookingInfoChild5,
+  .myBookingInfoChild6 {
+    position: absolute;
+    top: 248.5px;
+    left: 649.5px;
+    border-right: 1px solid var(--color-lightgray);
+    box-sizing: border-box;
+    width: 1px;
+    height: 221px;
+  }
+  .myBookingInfoChild4,
+  .myBookingInfoChild5,
+  .myBookingInfoChild6 {
+    left: 825.5px;
+  }
+  .myBookingInfoChild5,
+  .myBookingInfoChild6 {
+    left: 974.5px;
+  }
+  .myBookingInfoChild6 {
+    top: 247.5px;
+    left: 1081.5px;
+  }
+  .myBookingInfo {
+    position: relative;
+    background-color: var(--color-white);
+    width: 100%;
+    height: 832px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-lg);
+    color: var(--color-gray-200);
+    font-family: var(--font-poppins);
+  }
+  

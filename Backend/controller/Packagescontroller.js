@@ -1,10 +1,40 @@
 const Package=require('../Model/Package');
+const multer  = require('multer');
+const fs = require('fs');
+const Storage = multer.diskStorage({
+    destination : 'packagesImages',
+    filename:(req,file,cb)=>{
+        cb(null,file.originalname);
+    },
+});
+
+const upload = multer({
+    storage:Storage
+}).single('testImage');
+
 // create package API
-const CreatePackage=async(req,res)=>{
+const CreatePackage=(req,res)=>{
     try {
-        let Task = await Package.create(req.body);
-        Task.save();
-        res.status(200).send(Task);
+        upload(req,res,(err)=>{
+            if(err){
+                console.log(err);
+            }else{
+                let task = new Package({
+                    packagename:req.body.packagename,
+                    location:req.body.location,
+                    price:req.body.price,
+                    description:req.body.description,
+                    Image:{
+                        data: fs.readFileSync('packagesImages/'+req.file.filename),
+                        contentType:'image/png '
+                    }    
+                });
+                task.save()
+                .then(()=>res.status(200).send(task))
+                .catch((err)=>console.log(err))
+            }
+        })
+        
     } catch (error) {
         res.status(500).send({msg: error.message}); 
     }

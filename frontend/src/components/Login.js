@@ -2,6 +2,8 @@ import { useState,useEffect } from "react";           // Important imports from 
 import { useNavigate} from "react-router-dom";            // Important imports from packages
 import UserNavbar from "./UserNavbar";
 import loginavtar from '../assets/Images/Signin.jpg';
+import { URL } from "./tour-package";
+import {toast} from 'react-toastify';
 
 const Login = () => {
   const navigate = useNavigate();
@@ -20,7 +22,7 @@ const Login = () => {
     setShow(!Show)
   }
   const db = async()=>{
-    let result = await fetch("http://localhost/login",{
+    let result = await fetch(`${URL}/login`,{
       method : "post",
       body: JSON.stringify({email,Password}),
       headers : {
@@ -36,6 +38,7 @@ const Login = () => {
       localStorage.setItem("user",JSON.stringify(result));
       
     }else{
+      toast.error("Password or email incorrect");
       setStatus(true);
     }
   };
