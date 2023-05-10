@@ -8,6 +8,9 @@ const Home = () => {
   const [Checkout, setCheckout] = useState(new Date());
   const [searchtext,setsearchtext]= useState();
   const navigate = useNavigate();
+  const handleclick=()=>{
+    navigate('/Packages');
+  }
 
   // const [calender, setCalender] = useState(false);
 
@@ -112,7 +115,7 @@ const Home = () => {
             <a id="seemore" href="/Packages">
               See more
             </a>
-            <button id="Btn1" className="R">
+            <button id="Btn1" className="R" onClick={handleclick}>
               Book Packages
             </button>
           </div>
@@ -127,7 +130,7 @@ const Home = () => {
             <a id="seemore" href="/Packages">
               See more
             </a>
-            <button id="Btn1" className="R">
+            <button id="Btn1" className="R" onClick={handleclick}>
               Book Packages
             </button>
           </div>
@@ -141,7 +144,7 @@ const Home = () => {
             <a id="seemore" href="/Packages">
               See more
             </a>
-            <button id="Btn1" className="R">
+            <button id="Btn1" className="R" onClick={handleclick}>
               Book Packages
             </button>
           </div>

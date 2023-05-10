@@ -1,0 +1,347 @@
+.transportation-child {
+    position: absolute;
+    top: 11.38rem;
+    left: 3.13rem;
+    border-radius: var(--br-8xs);
+    border: 1px solid var(--color-lightgray-100);
+    box-sizing: border-box;
+    width: 73.75rem;
+    height: 4.75rem;
+  }
+  .transportation-item {
+    position: absolute;
+    top: 12.41rem;
+    left: 69.03rem;
+    width: 6.19rem;
+    height: 2.69rem;
+  }
+  .transportation-services2,
+  .you-can-book {
+    position: absolute;
+    left: 3.13rem;
+    color: var(--color-gray-400);
+    display: flex;
+    align-items: center;
+  }
+  .transportation-services2 {
+    top: 2.94rem;
+    font-size: var(--font-size-16xl);
+    width: 26.19rem;
+    height: 4.69rem;
+  }
+  .you-can-book {
+    top: 7.38rem;
+    width: 63.63rem;
+    height: 2.38rem;
+  }
+  .packages-list-child,
+  .packages-list-inner,
+  .packages-list-item {
+    position: absolute;
+    height: 102.38%;
+    width: 0.3%;
+    top: -1.19%;
+    right: 78.27%;
+    bottom: -1.19%;
+    left: 21.43%;
+    border-right: 1px solid var(--color-gainsboro-100);
+    box-sizing: border-box;
+  }
+  .packages-list-inner,
+  .packages-list-item {
+    right: 49.7%;
+    left: 50%;
+  }
+  .packages-list-inner {
+    right: 25.38%;
+    left: 74.32%;
+  }
+  .packages-list-child1 {
+    position: absolute;
+    height: 100%;
+    width: 21.58%;
+    top: 0;
+    right: 78.42%;
+    bottom: 0;
+    left: 0;
+    border-radius: var(--br-8xs) 0 0 var(--br-8xs);
+    background-color: var(--color-white);
+  }
+  .packages-list-child2,
+  .packages-list-child3,
+  .packages-list-child4 {
+    position: absolute;
+    height: 100%;
+    width: 28.27%;
+    top: 0;
+    right: 49.85%;
+    bottom: 0;
+    left: 21.88%;
+    background-color: var(--color-white);
+  }
+  .packages-list-child3,
+  .packages-list-child4 {
+    width: 24.01%;
+    right: 25.53%;
+    left: 50.46%;
+  }
+  .packages-list-child4 {
+    width: 25.23%;
+    right: 0;
+    left: 74.77%;
+    border-radius: 0 var(--br-8xs) var(--br-8xs) 0;
+  }
+  .packages-list-child5 {
+    position: absolute;
+    height: 102.38%;
+    width: 100.3%;
+    top: -1.19%;
+    right: -0.15%;
+    bottom: -1.19%;
+    left: -0.15%;
+    border-radius: var(--br-8xs);
+    border: 1px solid var(--color-gainsboro-100);
+    box-sizing: border-box;
+  }
+  .packages-list-child6,
+  .polygon-icon {
+    position: absolute;
+    height: 21.43%;
+    width: 3.34%;
+    top: 28.57%;
+    right: 83.06%;
+    bottom: 50%;
+    left: 13.6%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .packages-list-child6 {
+    height: 14.29%;
+    width: 2.9%;
+    top: 50%;
+    right: 83.51%;
+    bottom: 35.71%;
+  }
+  .all,
+  .famous,
+  .latest,
+  .rating {
+    position: absolute;
+    height: 47.62%;
+    width: 14.89%;
+    top: 26.19%;
+    left: 28.57%;
+    display: flex;
+    align-items: center;
+  }
+  .all,
+  .latest,
+  .rating {
+    width: 11.85%;
+    left: 56.53%;
+  }
+  .all,
+  .rating {
+    left: 81.46%;
+  }
+  .all {
+    width: 5.47%;
+    top: 23.81%;
+    left: 5.17%;
+  }
+  .packages-list {
+    position: absolute;
+    top: 12.44rem;
+    left: 4.75rem;
+    width: 20.56rem;
+    height: 2.63rem;
+    font-size: var(--font-size-smi);
+    color: var(--color-darkslategray-100);
+    font-family: var(--font-inter);
+  }
+  .transportation-child1,
+  .transportation-inner {
+    position: absolute;
+    top: 18.88rem;
+    left: 3.13rem;
+    height: 22.94rem;
+  }
+  .transportation-inner {
+    border-radius: var(--br-3xs);
+    border: 2px solid var(--color-lightgray-100);
+    box-sizing: border-box;
+    width: 73.75rem;
+  }
+  .transportation-child1 {
+    border-radius: var(--br-3xs) 0 0 var(--br-3xs);
+    width: 37.31rem;
+    object-fit: cover;
+  }
+  .transportation-child2 {
+    position: absolute;
+    top: 36.63rem;
+    left: 40.38rem;
+    border-top: 2px solid var(--color-gainsboro-200);
+    box-sizing: border-box;
+    width: 36.54rem;
+    height: 0.13rem;
+  }
+  .mahindra-scorpio-is1 {
+    position: absolute;
+    top: 28.81rem;
+    left: 42.63rem;
+    font-size: var(--font-size-lg);
+    font-family: var(--font-poppins);
+    display: inline-block;
+    width: 34.25rem;
+    height: 5.88rem;
+  }
+  .icon,
+  .icon1 {
+    position: absolute;
+    top: 25.56rem;
+    left: 52.31rem;
+    width: 0.09rem;
+    height: 1.72rem;
+  }
+  .icon1 {
+    top: 25.5rem;
+    left: 62.25rem;
+  }
+  .day1,
+  .mahindra-jeep3,
+  .reviews2 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+  }
+  .reviews2 {
+    top: 26rem;
+    left: 70.31rem;
+    font-size: var(--font-size-mini);
+    font-family: var(--font-poppins);
+    width: 5.31rem;
+    height: 0.88rem;
+  }
+  .day1,
+  .mahindra-jeep3 {
+    height: 2.06rem;
+  }
+  .mahindra-jeep3 {
+    top: 21.56rem;
+    left: 42.69rem;
+    font-size: var(--font-size-21xl);
+    width: 17.56rem;
+  }
+  .day1 {
+    top: 37.88rem;
+    left: 42.63rem;
+    font-family: var(--font-roboto);
+    color: #514240;
+    width: 10rem;
+  }
+  .group-child13 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: var(--br-8xs);
+    background-color: var(--color-tomato);
+    width: 9.38rem;
+    height: 2.81rem;
+  }
+  .book {
+    position: absolute;
+    top: 0.84rem;
+    left: 2.69rem;
+    display: flex;
+    align-items: center;
+    width: 4.06rem;
+    height: 1.13rem;
+  }
+  .rectangle-parent3 {
+    position: absolute;
+    top: 37.5rem;
+    left: 65.19rem;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 9.38rem;
+    height: 2.81rem;
+    cursor: pointer;
+    color: var(--color-white);
+  }
+  .star-icon,
+  .transportation-child4,
+  .transportation-child6 {
+    position: absolute;
+    top: 25.88rem;
+    left: 63.28rem;
+    width: 1.13rem;
+    height: 1.06rem;
+  }
+  .transportation-child4,
+  .transportation-child6 {
+    left: 64.65rem;
+  }
+  .transportation-child6 {
+    left: 65.97rem;
+    width: 1.19rem;
+  }
+  .transportation-child10,
+  .transportation-child8 {
+    position: absolute;
+    top: 25.88rem;
+    left: 67.34rem;
+    width: 1.13rem;
+    height: 1.06rem;
+  }
+  .transportation-child10 {
+    left: 68.72rem;
+  }
+  .days-ago,
+  .kathmandu {
+    position: absolute;
+    top: 25.56rem;
+    left: 44.44rem;
+    font-size: var(--font-size-lg);
+    font-family: var(--font-poppins);
+    display: flex;
+    align-items: center;
+    width: 6.94rem;
+    height: 1.81rem;
+  }
+  .days-ago {
+    top: 25.5rem;
+    left: 55.06rem;
+    width: 6.25rem;
+  }
+  .transportation-child12,
+  .vector-icon4 {
+    position: absolute;
+    height: 2.2%;
+    width: 1.41%;
+    top: 45.14%;
+    right: 45.23%;
+    bottom: 52.66%;
+    left: 53.36%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .vector-icon4 {
+    height: 2.19%;
+    right: 31.95%;
+    bottom: 52.68%;
+    left: 66.64%;
+  }
+  .transportation {
+    position: relative;
+    background-color: var(--color-white);
+    width: 100%;
+    height: 57.19rem;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-6xl);
+    color: var(--color-gray-300);
+    font-family: var(--font-inter-tight);
+  }
+  

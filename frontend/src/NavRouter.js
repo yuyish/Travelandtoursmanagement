@@ -10,6 +10,7 @@ import TourPackages5 from "./components/tour-package"
 import BookEnquiryOverView from "./components/BookEnquiryOverview"
 import BookEnquiry from './components/BookingEnquiry'
 import BookingItenary from "./components/BookingItenary"
+import Transportation from "./components/Transportation"
 // import Boookinginfo from "./Boookinginfo"
 // import Detailcomponent from "./components/Detailcomponent"
 function AppRouter() {
@@ -21,7 +22,7 @@ function AppRouter() {
                 <Route path="/" element={<Home/>} />
                 {/* <Route path="/Services" element={<Detailcomponent/>} /> */}
                 <Route path="/BookingOverview" element={<BookEnquiryOverView/>} />
-                {/* <Route path="/Services" element={<MyBookingInfo/>} /> */}
+                <Route path="/Services" element={<Transportation/>} />
                 {/* <Route path="/Bookings" element={<Boookinginfo/>} /> */}
                 <Route path="/Enquiry" element={<BookEnquiry/>} />
                 {/* <Route path="/Itenary" element={<AllBooking/>} /> */}
