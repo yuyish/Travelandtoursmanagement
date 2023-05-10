@@ -27,8 +27,20 @@ const viewBooking = async(req,res)=>{
 
     }
 }
+const cancelBooking = async(req,res)=>{
+    try {
+        let {id} = req.params;
+        const cancel = await Booking.findByIdAndDelete(id);
+        if(!cancel){
+            return res.status(404).json(`Not found the id:${id}`);
+        }
+        res.status(200).send({msg: "Deleted Successfully"});
+    } catch (error) {
+        res.status(500).json({ msg: error.message });
 
+    }
+}
 module.exports = {
     Bookpackage,
-    viewBooking
+    viewBooking,cancelBooking
 }

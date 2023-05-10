@@ -5,7 +5,7 @@ const BookingSchema = mongoose.Schema({
     Booking_Status :{
         type : String,
         enum:['completed','pending','cancelled'],
-        default: "completed"
+        default: "pending"
     },
     user_id:{
         type: mongoose.Types.ObjectId,
