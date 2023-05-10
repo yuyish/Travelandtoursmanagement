@@ -1,15 +1,22 @@
-import React from 'react'
+import React from "react";
 
-const BookDetail = () => {
+const BookDetail = (pack, index) => {
+  let rs = pack.pack;
+  let status = rs.Booking_Status;
+  let date = rs.Booking_date;
+  const dateObject = new Date(date);
+  const formattedDate = dateObject.toLocaleDateString();
+  let package_name = rs.package_id.packagename;
+  let package_price = rs.package_id.price;
   return (
-    <div className="abc-trek-14-days-parent">
-    <div className="abc-trek-">ABC Trek - 14 Days</div>
-    <div className="travel">Travel</div>
-    <div className="april-2023">27 April , 2023</div>
-    <div className="US-rate">USD $950</div>
-    <button className="completed-wrapper">completed</button>
-  </div>
-  )
-}
+    <div className="Book-Parent-Comp">
+      <div className="Book-trek">{package_name}</div>
+      <div className="Book-travel">Travel</div>
+      <div className="Book-date">{formattedDate}</div>
+      <div className="US-rate">Rs {package_price}</div>
+      <button className="completed-wrapper">{status}</button>
+    </div>
+  );
+};
 
-export default BookDetail
+export default BookDetail;

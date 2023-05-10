@@ -17,7 +17,7 @@ const Bookpackage = async (req, res) => {
 
 const viewBooking = async(req,res)=>{
     try {
-        const view = await Booking.find();
+        const view = await Booking.find().populate('user_id').populate('package_id');
         if(!view){
             res.status(404).json({ msg: "Failed to get data" });
         }
