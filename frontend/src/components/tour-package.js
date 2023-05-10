@@ -15,7 +15,7 @@ const TourPackages5 = () => {
     try {
       const { data } = await axios.get(`${URL}/api/readPackage`);
       setPackage(data);
-      setisLoading(false);
+      // setisLoading(false);
     } catch (error) {
       toast.error(error.message);
       setisLoading(false);

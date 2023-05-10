@@ -5,7 +5,10 @@ import { toast } from "react-toastify";
 // import { Buffer } from "buffer";
 import { IoIosPin } from "react-icons/io";
 import Box1 from "../assets/Images/Box1.png";
+// import Box1 from "../assets/Images/Box1.png";
+// import Box1 from "../assets/Images/Box1.png";
 import axios from "axios";
+import { URL } from "./tour-package";
 
 const ExtendedPackage = ({ pack, index }) => {
   // let rm = pack.Image;
@@ -16,7 +19,12 @@ const ExtendedPackage = ({ pack, index }) => {
   const navigate = useNavigate();
   const className = `tour-Box${index + 1}`;
   const imgclassname = `Pack-Image${index + 1}`;
+  // const Box = `Box${index + 1}`;
+  // console.log(Box);
   const name = JSON.parse(localStorage.getItem("user"));
+  console.log(name);
+  console.log(name._id);
+  console.log(pack._id);
   const [buttonClicked, setButtonClicked] = useState(false);
 
   const handlebook = async () => {
@@ -28,6 +36,7 @@ const ExtendedPackage = ({ pack, index }) => {
       }
     } catch (error) {
       toast.error(error.message);
+      console.log(error.message);
     }
     // navigate('/MyAccounts');
   };

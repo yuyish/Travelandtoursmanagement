@@ -1,9 +1,6 @@
 import "../assets/Styles/BookEnquiryOverview.css";
 import AllBooking from "./AllBooking";
 const BookEnquiryOverView = ({ pack, index }) => {
-    const handleBooking = ()=>{
-        
-    }
     return (
     <div className="book-enquiry-over-view">
       <div className="book-enquiry-over-view-child" />
@@ -80,7 +77,7 @@ const BookEnquiryOverView = ({ pack, index }) => {
             the Annapurna Conservation Area Project, a rich storehouse of
             Himalayan biodiversity.
           </li>
-          <li className="the-abc-trek">
+          <li className="the-abc-trek"> 
             A chance to encounter a mix of ethnic groups especially, the Gurung
             ethnic groups.
           </li>
