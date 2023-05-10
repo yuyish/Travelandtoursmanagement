@@ -99,7 +99,7 @@ function Navbar() {
                       <p>My Accounts</p>
                       <span>&gt;</span>
                     </Link>
-                    <Link to="/" className="sub-menu-link">
+                    <Link to="/Bookings" className="sub-menu-link">
                       <img src={booking} alt="booking" />
                       <p>Bookings</p>
                       <span>&gt;</span>

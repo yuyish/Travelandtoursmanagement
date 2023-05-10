@@ -39,7 +39,6 @@ const ExtendedPackage = ({ pack,index }) => {
       ):(
         <>
         <div className="mainContainer-extended">
-        {console.log(index+1)}
         <div className={className}>
           <div className="container-image-div">
               <img

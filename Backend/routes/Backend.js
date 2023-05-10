@@ -1,7 +1,7 @@
 const express=require('express');
 const { CreateSignup, CreateLogin ,UserUpdate} = require('../controller/LogSigncontroller');
 const {CreatePackage,ReadPackage,ReadSinglePackage,deletepackage, UpdatePackage} = require('../controller/Packagescontroller');
-const { Bookpackage } = require('../controller/Bookingscontroller');
+const { Bookpackage, viewBooking } = require('../controller/Bookingscontroller');
 // const { createprofie } = require('../controller/UserprofileController');
 
 // const Users=require('../Model/Users');
@@ -39,4 +39,6 @@ router.put("/profile/:email",UserUpdate);
 
 // create the booking package API
 router.post('/bookings/:user_id/:package_id', Bookpackage);
+// get bookings
+router.get('/bookings',viewBooking);
 module.exports = router;

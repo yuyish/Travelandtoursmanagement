@@ -15,6 +15,20 @@ const Bookpackage = async (req, res) => {
     }
 }; 
 
+const viewBooking = async(req,res)=>{
+    try {
+        const view = await Booking.find();
+        if(!view){
+            res.status(404).json({ msg: "Failed to get data" });
+        }
+        res.status(200).send(view);
+    } catch (error) {
+        res.status(500).json({ msg: error.message });
+
+    }
+}
+
 module.exports = {
     Bookpackage,
+    viewBooking
 }

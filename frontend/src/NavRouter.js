@@ -4,16 +4,14 @@ import Login from './components/Login'      // Importing the file from the folde
 import Signup from './components/Signup'      // Importing the file from the folder components
 import Home from './components/Home'      // Importing the file from the folder components
 import Navbar from "./components/Navbar"      // Importing the file from the folder components
-// import Packages from "./components/Package"      // Importing the file from the folder components
-// import UserNavbar from "./components/UserNavbar"
 import Aboutus from "./components/Aboutus"
 import UserDashboard from "./components/UserDashboard";
 import TourPackages5 from "./components/tour-package"
-import MyBookingInfo from "./components/mybookinginfo"
 import BookEnquiryOverView from "./components/BookEnquiryOverview"
 import BookEnquiry from './components/BookingEnquiry'
 import BookingItenary from "./components/BookingItenary"
-
+import Boookinginfo from "./Boookinginfo"
+// import Detailcomponent from "./components/Detailcomponent"
 function AppRouter() {
   return (
     <div>
@@ -21,9 +19,10 @@ function AppRouter() {
           <Navbar/>  
             <Routes>
                 <Route path="/" element={<Home/>} />
-                {/* <Route path="/Services" element={<UserDashboard/>} /> */}
+                {/* <Route path="/Services" element={<Detailcomponent/>} /> */}
                 <Route path="/BookingOverview" element={<BookEnquiryOverView/>} />
-                <Route path="/Services" element={<MyBookingInfo/>} />
+                {/* <Route path="/Services" element={<MyBookingInfo/>} /> */}
+                <Route path="/Bookings" element={<Boookinginfo/>} />
                 <Route path="/Enquiry" element={<BookEnquiry/>} />
                 {/* <Route path="/Itenary" element={<AllBooking/>} /> */}
                 <Route path="/Itenary" element={<BookingItenary/>} />
