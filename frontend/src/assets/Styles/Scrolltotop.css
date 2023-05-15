@@ -1,0 +1,22 @@
+.scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #5CCD5C;
+    color: #fff;
+    cursor: pointer;
+    transition: opacity 0.3s;
+  }
+  
+  .scroll-to-top.visible {
+    display: block;
+  }
+  
+  .scroll-to-top:focus {
+    outline: none;
+  }
