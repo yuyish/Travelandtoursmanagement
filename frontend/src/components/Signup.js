@@ -1,5 +1,7 @@
-import { useState } from "react";             // Important imports from packages
+import { useState} from "react";             // Important imports from packages
 import { useNavigate } from "react-router-dom";             // Important imports from packages
+import Signupavtar from '../assets/Images/Signup.jpg';
+import { URL } from "./tour-package";
 const Signup = () => {
   let [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -26,7 +28,7 @@ const Signup = () => {
             console.log(name);
             if(name!==""){
               setBlank(false)
-              let result = await fetch("http://localhost/Signup", {
+              let result = await fetch(`${URL}/Signup`, {
                 method: "post",
                 body: JSON.stringify({ name, email, Password }),
                 headers: {
@@ -62,8 +64,9 @@ const Signup = () => {
       <>
         <div className="Maindiv">
           <div className="Login_ImageBox">
-            <img src="./Images/Signup.jpg" alt={"Loading"} className="Img" />
-          </div>          <div className="Login_Content">
+            <img src={Signupavtar} alt={"Loading"} className="Img" />
+          </div>         
+           <div className="Login_Content">
             <p className="ac"> Already have an account?</p>
             <a href="http://localhost:3000/Login" className="bc">
               Login to begin an amazing journey            </a>

@@ -1,0 +1,145 @@
+.Dashboard-Main{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin: 20px;
+}
+.dashboard{
+    display: flex;
+    align-items: center;
+    margin-left: 90px;
+    width: 30%;
+    flex-direction: column;
+}
+.userprofile{
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    
+}
+.userimageprofile{
+  height: 250px;
+  width: 250px;
+  border-radius: 100%;
+  overflow: hidden;
+  display: flex;  
+  object-fit: cover;
+}
+.UserImage{
+    max-width: inherit;
+    max-height: inherit;  
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+
+}
+.spans{
+  padding-left: 20px;
+}
+.spans1{
+  padding-left: 10px;
+}
+.user-Botton{
+    color: black;
+    background-color: #027baf;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+
+.dashboard-contents{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+/*Style for Form*/
+.detail {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 70px;
+  }
+  
+  .user-contents {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    flex-basis: 100%; /* Set initial flex-basis to 100% */
+  }
+  
+  label {
+    display: flex;
+    font-weight: bold;
+    margin-bottom: 15px;
+    align-items: flex-start;
+  }
+  
+  .box {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 93%;
+  }
+  .box-subdiv {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 86%;
+  }
+  .box-subdiv-cpc {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+  }
+.subdiv{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+.subdiv-det{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+  
+  #botton {
+    background-color: #FF533C;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #botton:hover {
+    background-color: #027baf;
+  }
+  input[type="file"] {
+    /* width: 50%; */
+    display: none;
+}
+.buttondiv{
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+  
+  /* Media query for small screens */
+  @media (max-width: 767px) {
+    .user-contents {
+      flex-basis: 50%; /* Set flex-basis to 50% for two items per row */
+    }
+  }
+  
+  

@@ -1,13 +1,40 @@
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import { FaSearch, FaCalendar } from "react-icons/fa";
+import { FaSearch} from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 const Home = () => {
   const [startDate, setStartDate] = useState(new Date());
+  const [Checkout, setCheckout] = useState(new Date());
   const [searchtext,setsearchtext]= useState();
+  const navigate = useNavigate();
+  const handleclick=()=>{
+    navigate('/Packages');
+  }
 
   // const [calender, setCalender] = useState(false);
 
+  const handlesearch = async ()=>{
+    try {
+      let search = await fetch(`http://localhost/api/Packages/${searchtext}`, {
+      method: "post",
+      body: JSON.stringify({searchtext}),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    search = await search.json();
+    console.log(search.location);
+    if(search){
+      navigate('/packages')
+    }else{
+      alert(`no value found with ${searchtext}`)
+    }
+    } catch (error) {
+      console.log(error);
+    }
+    
+  }
   return (
     <>
       <div className="HomeMainDiv">
@@ -21,7 +48,6 @@ const Home = () => {
               <div className="card">
                 <div className="search-bar">
                   <div className="search-box">
-                    <FaSearch className="searchIcon" />
                     <input
                       type="text"
                       value={searchtext}
@@ -29,10 +55,10 @@ const Home = () => {
                       id="destination"
                       className="inp"
                       placeholder="Search your destination here"
+                      required
                     />
                   </div>
                   <div className="date-box">
-
 
                     <DatePicker
                       selected={startDate}
@@ -43,10 +69,26 @@ const Home = () => {
                       showYearDropdown
                       scrollableYearDropdown
                       minDate={new Date()}
+                      placeholderText="Select Check in Date"
                     />
-                    <FaCalendar className="DateIcon" />
+                 
                   </div>
-                  <button id="search-button">Search</button>
+                  <div className="date-box">
+                    <DatePicker
+                        selected={Checkout}
+                        onChange={(date) => setCheckout(date)}
+                        className="inp"
+                        id="ip"
+                        isClearable
+                        showYearDropdown
+                        scrollableYearDropdown
+                        minDate={new Date()}
+                        placeholderText="Select Check Out Date"
+                      />
+                  </div>
+                  <div>
+                  <button id="search-button" onClick={handlesearch} ><span><FaSearch className="searchIcon" /></span>  Search</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -55,7 +97,7 @@ const Home = () => {
       </div>
 
       {/* PacKages  */}
-      <div>
+      <div className="PackageContent">
         <h1 className="head">Our</h1>
         <h1 className="PackHeading">Popular Packages</h1>
         <h3 className="PackHeading">
@@ -73,7 +115,7 @@ const Home = () => {
             <a id="seemore" href="/Packages">
               See more
             </a>
-            <button id="Btn1" className="R">
+            <button id="Btn1" className="R" onClick={handleclick}>
               Book Packages
             </button>
           </div>
@@ -88,7 +130,7 @@ const Home = () => {
             <a id="seemore" href="/Packages">
               See more
             </a>
-            <button id="Btn1" className="R">
+            <button id="Btn1" className="R" onClick={handleclick}>
               Book Packages
             </button>
           </div>
@@ -102,13 +144,61 @@ const Home = () => {
             <a id="seemore" href="/Packages">
               See more
             </a>
-            <button id="Btn1" className="R">
+            <button id="Btn1" className="R" onClick={handleclick}>
               Book Packages
             </button>
           </div>
         </div>
       </div>
       {/*  */}
+
+      {/* How it works */}
+
+      <div className="How-Home">
+          <h2 className="h">How</h2>
+          <h2>It works ?</h2>
+          <p>Now Hassle of Booking Travel Packages got simplified in a click</p>
+          <div className="Home-Howmaindiv">
+            <div className="Home-Howcard">
+              <div className="Home-How-Register"></div>
+              <h4>Register</h4>
+            </div>
+            <div className="Home-Howcard">
+              <div className="Jome-How-Login"></div>
+              <h4>Log in to account</h4>
+            </div>
+            <div className="Home-Howcard">
+              <div className="How-Bookpacakge"></div>
+              <h4>Book pacakge</h4>
+            </div>
+            <div className="Home-Howcard">
+              <div className="Home-How-Travel"></div>
+              <h4>Travel</h4>
+            </div>
+          </div>
+        </div>
+{/* why choose us */}
+
+<div className="Home-Why">
+          <h2 className="w">Why</h2>
+          <br />
+          <h2>Choose us ?</h2>
+          <div className="Home-Whymaindiv">
+            <div className="Home-Howcard">
+              <div className="Home-Why-Service"></div>
+              <h4>Best Quality Service</h4>
+            </div>
+            <div className="Home-Howcard">
+              <div className="Home-Why-Security"></div>
+              <h4>Traveler's Security</h4>
+            </div>
+            <div className="Home-Howcard">
+              <div className="Home-Why-Support"></div>
+              <h4>24/7 Support</h4>
+            </div>
+          </div>
+        </div>
+
     </>
   );
 };

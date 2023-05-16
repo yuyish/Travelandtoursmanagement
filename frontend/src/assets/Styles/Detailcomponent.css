@@ -1,0 +1,114 @@
+.MainBox-frame {
+    position: absolute;
+    top: 250px;
+    left: 450px;
+    border-radius: 10px;
+    border: 2px solid #cbcbcb;
+    box-sizing: border-box;
+    width: 48.63rem;
+    height: auto;
+}
+  .Travel-Booking-Info {
+    position: absolute;
+    top: 1.56rem;
+    left: 1rem;
+    font-size: 2rem;
+    font-family: Inter;
+    color: black;    
+  }
+  .Booking-for {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 1.88rem;
+    color: black;
+  }
+  .Booking-name {
+    top: 4.7rem;
+    left: 1rem;
+    font-weight: 600;
+    position: absolute;
+    display: flex;
+    font-size: x-large;
+    align-items: center;
+    height: auto;
+    color: black;
+  }
+  .Booking-for {
+    left: 14rem;
+    max-width: 15px;
+  }
+  .Booking-for,
+  .Booking-date,
+  .Booking-price,
+  .Booking-Status {
+    top: 5rem;
+    font-weight: 600;
+    font-size: x-large;
+    color: black;
+  }
+  .Booking-date {
+    position: absolute;
+    left: 22rem;
+    display: flex;
+    align-items: center;
+    width: 3.56rem;
+    height: 1.88rem;
+  }
+  .Booking-price {
+    left: 30rem;
+    width: 3.81rem;
+  }
+  .Booking-price,
+  .Booking-Status{
+    position: absolute;
+    /* display: flex; */
+    align-items: center;
+    height: 1.88rem;
+  }
+  .Booking-Status {
+    top: 4.94rem;
+    left: 38rem;
+    font-weight: 600;
+    width: 5.31rem;
+    color: black;
+  }
+
+
+
+  .completed-wrapper {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: #3eb750;
+    color: white;
+    border-radius: 5px;
+    width: 6.75rem;
+    height: 1.63rem;
+  }
+  .completed-wrapper:hover{
+    background-color: red;
+  }
+  .maincontent-comp{
+    margin-top: 8.5rem;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  .Book-Parent-Comp{  
+    display: flex;
+    justify-content: space-evenly;
+    left: 1rem;
+    width: 45.75rem;
+    font-size: 1.13rem;
+    color: black;
+  }
+  .rectangle-parent {
+    position: relative;
+    width: 100%;
+    height:auto;
+    text-align: left;
+    font-size: 1.19rem;
+    color:black;
+    font-family: Poppins;
+  }
+  

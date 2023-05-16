@@ -1,16 +1,26 @@
-import { useState } from "react";           // Important imports from packages
+import { useState,useEffect } from "react";           // Important imports from packages
 import { useNavigate} from "react-router-dom";            // Important imports from packages
+import loginavtar from '../assets/Images/Signin.jpg';
+import { URL } from "./tour-package";
+import {toast} from 'react-toastify';
+
 const Login = () => {
+  const navigate = useNavigate();
+  useEffect(()=>{
+    const auth = localStorage.getItem('user');
+    if(auth){
+      navigate('/');
+    }
+  });
   const [status,setStatus]=useState(false);
   const [email,setEmail]= useState();
   const [Password,setPassword]= useState();
   const [Show,setShow]= useState(false);
-  const navigate = useNavigate();
   const Passshow=()=>{
     setShow(!Show)
   }
   const db = async()=>{
-    let result = await fetch("http://localhost/login",{
+    let result = await fetch(`${URL}/login`,{
       method : "post",
       body: JSON.stringify({email,Password}),
       headers : {
@@ -19,18 +29,25 @@ const Login = () => {
     });
     result = await result.json();
     console.log(result);
+    console.log(result.name);
     if(result.name){
       setStatus(false)
       navigate("/");
+      localStorage.setItem("user",JSON.stringify(result));
+      window.location.reload();
+
+      
     }else{
+      toast.error("Password or email incorrect");
       setStatus(true);
     }
   };
+
   return (
     <> 
       <div className="Maindiv">
         <div className="Login_ImageBox">
-          <img src="./Images/Signin.jpg" alt={"Loading"} className="Img" />
+          <img src={loginavtar} alt={"Loading"} className="Img" />
         </div>
         <div className="Login_Content">
           <p className="ac"> Don't have an account?</p>

@@ -1,0 +1,503 @@
+.book-enquiry-booking-child {
+    position: absolute;
+    top: -1.5rem;
+    left: 0;
+    background-color: var(--color-whitesmoke-200);
+    width: 80rem;
+    height: 12.44rem;
+  }
+  .component-11-child,
+  .component-11-inner,
+  .component-11-item {
+    position: absolute;
+    height: 100%;
+    width: 33.33%;
+    top: 0;
+    right: 66.67%;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-silver);
+    box-sizing: border-box;
+  }
+  .component-11-inner,
+  .component-11-item {
+    right: 33.33%;
+    left: 33.33%;
+  }
+  .component-11-inner {
+    right: 0;
+    left: 66.67%;
+    background-color: var(--color-steelblue);
+  }
+  .inquiry-book,
+  .itinerary-include,
+  .overview {
+    position: absolute;
+    top: 23.6%;
+    left: 9.64%;
+    font-weight: 600;
+  }
+  .inquiry-book,
+  .itinerary-include {
+    left: 36.21%;
+  }
+  .inquiry-book {
+    left: 72.25%;
+    color: var(--color-white);
+  }
+  .component-11 {
+    position: absolute;
+    top: 13rem;
+    left: 3.06rem;
+    width: 73.88rem;
+    height: 5.56rem;
+    font-size: var(--font-size-13xl);
+    color: var(--color-gray-400);
+  }
+  .book-enquiry-booking-item {
+    position: absolute;
+    top: 18.44rem;
+    left: 3.13rem;
+    background-color: var(--color-darkslategray);
+    width: 73.81rem;
+    height: 0.56rem;
+  }
+  .usd-950 {
+    position: absolute;
+    top: 1.31rem;
+    left: 2.25rem;
+    font-weight: 500;
+  }
+  .group-child,
+  .pricing {
+    position: absolute;
+    top: 0;
+  }
+  .pricing {
+    left: 6.19rem;
+    font-size: var(--font-size-xl);
+    font-weight: 500;
+  }
+  .group-child {
+    left: 0;
+    border-radius: var(--br-31xl);
+    background-color: var(--color-steelblue);
+    width: 16.63rem;
+    height: 4.38rem;
+  }
+  .book-now {
+    position: absolute;
+    top: 0.81rem;
+    left: 3rem;
+    font-weight: 600;
+  }
+  .rectangle-parent {
+    position: absolute;
+    top: 5.06rem;
+    left: 0;
+    width: 16.63rem;
+    height: 4.38rem;
+    font-size: var(--font-size-11xl);
+    color: var(--color-gray-100);
+  }
+  .price,
+  .usd-950-parent,
+  .usd-9501 {
+    position: absolute;
+    color: var(--color-black);
+  }
+  .usd-950-parent {
+    top: 0;
+    left: 31.69rem;
+    width: 16.63rem;
+    height: 9.44rem;
+    font-size: var(--font-size-21xl);
+  }
+  .price,
+  .usd-9501 {
+    top: 30.19rem;
+    left: 5.13rem;
+    font-size: var(--font-size-11xl);
+    font-weight: 500;
+  }
+  .price {
+    top: 28.56rem;
+    font-size: var(--font-size-xl);
+    color: var(--color-tomato);
+  }
+  .group-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+    background-color: var(--color-steelblue);
+    width: 35.44rem;
+    height: 4.38rem;
+  }
+  .book-now1 {
+    position: absolute;
+    top: 0.81rem;
+    left: 13rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    width: 9.44rem;
+  }
+  .rectangle-group {
+    position: absolute;
+    top: 53.63rem;
+    left: 4.56rem;
+    width: 35.44rem;
+    height: 4.38rem;
+    font-size: var(--font-size-11xl);
+    color: var(--color-gray-100);
+  }
+  .book-enquiry-booking-inner {
+    top: 21.88rem;
+    left: 41.75rem;
+    background-color: var(--color-whitesmoke-100);
+    border: 1px solid var(--color-silver);
+    width: 32.81rem;
+    height: 36.13rem;
+  }
+  .book-enquiry-booking-inner,
+  .line-div,
+  .rectangle-div {
+    position: absolute;
+    box-sizing: border-box;
+  }
+  .line-div {
+    top: 25.22rem;
+    left: 41.72rem;
+    border-top: 1px solid var(--color-silver);
+    width: 32.88rem;
+    height: 0.06rem;
+  }
+  .rectangle-div {
+    top: 39.81rem;
+    left: 43.81rem;
+    border-radius: var(--br-8xs);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-darkgray);
+    width: 28.69rem;
+    height: 12.44rem;
+  }
+  .send-child {
+    top: 0;
+    left: 0;
+    border-radius: var(--br-10xs);
+    background-color: var(--color-steelblue);
+    width: 4.69rem;
+    height: 2.19rem;
+  }
+  .send,
+  .send-child,
+  .send1 {
+    position: absolute;
+  }
+  .send1 {
+    top: 0.75rem;
+    left: 1.06rem;
+    display: flex;
+    align-items: center;
+    width: 2.63rem;
+    height: 0.75rem;
+  }
+  .send {
+    top: 53.5rem;
+    left: 43.81rem;
+    width: 4.69rem;
+    height: 2.19rem;
+    color: var(--color-white);
+    font-family: var(--font-inter);
+  }
+  .span {
+    color: var(--color-tomato);
+  }
+  .first-name-txt-container {
+    line-break: anywhere;
+    width: 100%;
+  }
+  .first-name,
+  .first-name1 {
+    position: absolute;
+    top: 26.5rem;
+    left: 43.81rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    width: 5.69rem;
+    height: 1.25rem;
+  }
+  .first-name1 {
+    top: 34.31rem;
+    left: 5.13rem;
+  }
+  .contact,
+  .country,
+  .email-address,
+  .email-address1,
+  .inquire-about-tour,
+  .phone-1 {
+    position: absolute;
+    left: 43.81rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+  }
+  .inquire-about-tour {
+    top: 23.06rem;
+    font-size: var(--font-size-xl);
+    width: 13.31rem;
+    height: 1.25rem;
+  }
+  .contact,
+  .country,
+  .email-address,
+  .email-address1,
+  .phone-1 {
+    top: 30.44rem;
+    width: 7.69rem;
+    height: 1.19rem;
+  }
+  .contact,
+  .country,
+  .email-address1,
+  .phone-1 {
+    top: 38.25rem;
+    left: 5.13rem;
+  }
+  .contact,
+  .country,
+  .phone-1 {
+    top: 42.13rem;
+  }
+  .contact,
+  .phone-1 {
+    top: 30.44rem;
+    left: 59.69rem;
+    width: 7.13rem;
+  }
+  .contact {
+    top: 38.25rem;
+    left: 21rem;
+    width: 4.63rem;
+  }
+  .passport-number {
+    top: 42.13rem;
+    left: 21rem;
+    font-weight: 500;
+    width: 9.13rem;
+  }
+  .booking-date,
+  .note-if-online,
+  .passport-number {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 1.19rem;
+  }
+  .booking-date {
+    top: 46rem;
+    left: 21rem;
+    font-weight: 500;
+    width: 9.13rem;
+  }
+  .note-if-online {
+    top: 50.69rem;
+    left: 5.13rem;
+    font-size: 0.81rem;
+    width: 28.69rem;
+  }
+  .last-name,
+  .last-name1,
+  .no-of-persons-container,
+  .no-of-travelers-container,
+  .phone-2,
+  .your-message {
+    position: absolute;
+    top: 46.13rem;
+    left: 5.13rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    width: 9.13rem;
+    height: 1.19rem;
+  }
+  .last-name,
+  .last-name1,
+  .no-of-persons-container,
+  .phone-2,
+  .your-message {
+    top: 34.38rem;
+    left: 43.81rem;
+    width: 7.13rem;
+  }
+  .last-name,
+  .last-name1,
+  .no-of-persons-container,
+  .your-message {
+    left: 59.69rem;
+  }
+  .last-name,
+  .last-name1,
+  .your-message {
+    top: 38.31rem;
+    left: 43.81rem;
+  }
+  .last-name,
+  .last-name1 {
+    top: 26.5rem;
+    left: 59.69rem;
+    width: 5.69rem;
+    height: 1.25rem;
+  }
+  .last-name1 {
+    top: 34.31rem;
+    left: 21rem;
+  }
+  .book-enquiry-booking-child1 {
+    position: absolute;
+    top: 28.06rem;
+    left: 43.81rem;
+    border-radius: var(--br-8xs);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-darkgray);
+    box-sizing: border-box;
+    width: 12.81rem;
+    height: 1.75rem;
+  }
+  .book-enquiry-booking-child2,
+  .book-enquiry-booking-child3,
+  .book-enquiry-booking-child4,
+  .book-enquiry-booking-child5,
+  .book-enquiry-booking-child6,
+  .book-enquiry-booking-child7 {
+    position: absolute;
+    top: 35.88rem;
+    left: 5.13rem;
+    border-radius: var(--br-8xs);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-darkgray);
+    box-sizing: border-box;
+    width: 12.81rem;
+    height: 1.75rem;
+  }
+  .book-enquiry-booking-child3,
+  .book-enquiry-booking-child4,
+  .book-enquiry-booking-child5,
+  .book-enquiry-booking-child6,
+  .book-enquiry-booking-child7 {
+    top: 39.75rem;
+  }
+  .book-enquiry-booking-child4,
+  .book-enquiry-booking-child5,
+  .book-enquiry-booking-child6,
+  .book-enquiry-booking-child7 {
+    top: 43.63rem;
+  }
+  .book-enquiry-booking-child5,
+  .book-enquiry-booking-child6,
+  .book-enquiry-booking-child7 {
+    top: 31.94rem;
+    left: 43.81rem;
+    height: 1.81rem;
+  }
+  .book-enquiry-booking-child6,
+  .book-enquiry-booking-child7 {
+    top: 28.06rem;
+    left: 59.69rem;
+    height: 1.75rem;
+  }
+  .book-enquiry-booking-child7 {
+    top: 35.88rem;
+    left: 21rem;
+  }
+  .book-enquiry-booking-child10,
+  .book-enquiry-booking-child11,
+  .book-enquiry-booking-child12,
+  .book-enquiry-booking-child13,
+  .book-enquiry-booking-child14,
+  .book-enquiry-booking-child8,
+  .book-enquiry-booking-child9 {
+    position: absolute;
+    top: 39.75rem;
+    left: 21rem;
+    border-radius: var(--br-8xs);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-darkgray);
+    box-sizing: border-box;
+    width: 12.81rem;
+    height: 1.75rem;
+  }
+  .book-enquiry-booking-child10,
+  .book-enquiry-booking-child11,
+  .book-enquiry-booking-child12,
+  .book-enquiry-booking-child13,
+  .book-enquiry-booking-child14,
+  .book-enquiry-booking-child9 {
+    top: 43.63rem;
+  }
+  .book-enquiry-booking-child10,
+  .book-enquiry-booking-child11,
+  .book-enquiry-booking-child12,
+  .book-enquiry-booking-child13,
+  .book-enquiry-booking-child14 {
+    top: 47.5rem;
+  }
+  .book-enquiry-booking-child11,
+  .book-enquiry-booking-child12,
+  .book-enquiry-booking-child13,
+  .book-enquiry-booking-child14 {
+    top: 47.63rem;
+    left: 5.13rem;
+  }
+  .book-enquiry-booking-child12,
+  .book-enquiry-booking-child13,
+  .book-enquiry-booking-child14 {
+    top: 31.94rem;
+    left: 59.69rem;
+    height: 1.81rem;
+  }
+  .book-enquiry-booking-child13,
+  .book-enquiry-booking-child14 {
+    top: 35.88rem;
+    left: 43.81rem;
+  }
+  .book-enquiry-booking-child14 {
+    left: 59.69rem;
+  }
+  .book-enquiry-booking-child15 {
+    position: absolute;
+    top: 13rem;
+    left: 3.13rem;
+    border: 2px solid var(--color-silver);
+    box-sizing: border-box;
+    width: 73.88rem;
+    height: 48.63rem;
+  }
+  .annapurna-base-camp {
+    margin: 0;
+  }
+  .annapurna-base-camp-container {
+    position: absolute;
+    top: 21.63rem;
+    left: 5.13rem;
+    font-size: var(--font-size-21xl);
+    font-weight: 600;
+    font-family: var(--font-inter);
+    color: var(--color-steelblue);
+  }
+  .book-enquiry-booking {
+    position: relative;
+    background-color: var(--color-white);
+    width: 100%;
+    height: 99.31rem;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-mini);
+    color: var(--color-gray-300);
+    font-family: var(--font-poppins);
+  }
+  

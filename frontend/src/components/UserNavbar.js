@@ -1,58 +1,86 @@
-import React from "react";    // Important imports from packages
+import React, { useState} from 'react';
 import { Link } from "react-router-dom";    // Important imports from packages
-import { useState } from 'react';
+import logo from '../assets/Images/Logo.png'
+import profile from '../assets/Images/profileimg.png'
+import user from '../assets/Images/user.png'
+import booking from '../assets/Images/booking.png'
+import settings from '../assets/Images/settings.png'
+import Logout from '../assets/Images/logout.png'
+import '../assets/Styles/usernavbar.css'
+const Home = (props) => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-function UserNavbar() {
-    const [isOpen, setIsOpen] = useState(false);
-  
+  const storedUsername = JSON.parse(localStorage.getItem("user"));
+  let name = storedUsername.name;
+
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  }
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <>
-      <nav className="navbar">
-        <div className="navbar-logo">
-          <a href="/"> <img src="./Images/Logo.png" alt="Bagpact"  id="Logo"/></a>
+    <div className="home-container">
+      <header data-thq="thq-navbar" className="home-navbar">
+        <a href="/">
+          <img src={logo} alt="Bagpact" className="home-logo" />
+        </a>
+
+        <div data-role="Nav" data-thq="thq-navbar-nav" className="home-menu">
+          <nav
+            data-role="Nav"
+            data-thq="thq-navbar-nav-links"
+            className="home-nav-items"
+          >
+            <Link to="/" className="home-L">
+              <span className="home-home">Home</span>
+            </Link>
+            <Link to="/Packages" className="home-L">
+              <span className="home-packages">Packages</span>
+            </Link>
+            <Link to="/Services" className="home-L">
+              <span className="home-services">Services</span>
+            </Link>
+            <Link to="/about" className="home-L">
+              <span className="home-about">About us</span>
+            </Link>
+          </nav>
         </div>
-        <div className="navitemmid">
-        <ul className="navbar-nav">
-          <li className="nav-item">
-            <Link to="/" className="nav-link">
-              <i className="fas fa-home"></i>
-              <span className="link-text">Home</span>
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/Packages" className="nav-link">
-              <i className="fas fa-sign-in-alt"></i>
-              <span className="link-text">Packages</span>
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/Services" className="nav-link">
-              <i className="fas fa-user-plus"></i>
-              <span className="link-text">Services</span>
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/about" className="nav-link">
-              <i className="fas fa-info-circle"></i>
-              <span className="link-text">About Us</span>
-            </Link>
-          </li>
-        </ul>
-      </div>
-        <div className="bttn">
-        <button onClick={toggleMenu} className="bon">Dropdown</button>
-      {isOpen && (
-        <ul>
-          <li>Profile</li>
-          <li>Log Out</li>
-        </ul>
-      )}
+
+        <div className="user-profile" onClick={toggleMenu}>
+          <img src={profile} alt="UserProfile" className="user-pic" />
+          
         </div>
-      </nav>
-    </>
+
+        {isMenuOpen && (
+          <div className="sub-menu-wrap">
+            <div className="sub-menu">
+            <span className="username">Hello {name}</span>
+              <Link to='/MyAccounts' className="sub-menu-link" >
+                <img src={user} alt="user" />
+                <p>My Accounts</p>
+                <span>&gt;</span>
+              </Link>
+              <Link to="/" className="sub-menu-link">
+                <img src={booking} alt="booking" />
+                <p>Bookings</p>
+                <span>&gt;</span>
+              </Link>
+              <Link className="sub-menu-link">
+                <img src={settings} alt="setting" />
+                <p>Settings</p>
+                <span>&gt;</span>
+              </Link>
+              <Link className="sub-menu-link" >
+                <img src={Logout} alt="logout" />
+                <p>Log Out</p>
+                <span>&gt;</span>
+              </Link>
+            </div>
+          </div>
+        )}
+      </header>
+    </div>
   );
-}
-export default UserNavbar;
+};
+
+
+export default Home

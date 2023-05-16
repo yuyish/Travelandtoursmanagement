@@ -1,0 +1,846 @@
+.book-enquiry-itinerary-child {
+    position: absolute;
+    top: 27.44rem;
+    left: 7.81rem;
+    border-right: 2px solid var(--color-silver);
+    box-sizing: border-box;
+    width: 0.13rem;
+    height: 164.69rem;
+  }
+  .book-enquiry-itinerary-item {
+    position: absolute;
+    top: -1.5rem;
+    left: 0;
+    background-color: var(--color-whitesmoke-200);
+    width: 80rem;
+    height: 12.44rem;
+  }
+  .component-11-child1,
+  .component-11-child2,
+  .component-11-child3 {
+    position: absolute;
+    height: 100%;
+    width: 33.33%;
+    top: 0;
+    right: 66.67%;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-silver);
+    box-sizing: border-box;
+  }
+  .component-11-child2,
+  .component-11-child3 {
+    right: 33.33%;
+    left: 33.33%;
+    background-color: var(--color-steelblue);
+  }
+  .component-11-child3 {
+    right: 0;
+    left: 66.67%;
+    background-color: var(--color-white);
+  }
+  .inquiry-book1,
+  .itinerary-include1,
+  .overview1 {
+    position: absolute;
+    top: 23.6%;
+    left: 9.64%;
+    font-weight: 600;
+  }
+  .inquiry-book1,
+  .itinerary-include1 {
+    left: 36.21%;
+    color: var(--color-white);
+  }
+  .inquiry-book1 {
+    left: 72.25%;
+    color: var(--color-gray-400);
+  }
+  .component-111 {
+    position: absolute;
+    top: 13rem;
+    left: 3.06rem;
+    width: 73.88rem;
+    height: 5.56rem;
+    font-size: var(--font-size-13xl);
+    color: #4e4e4e;
+    font-family: var(--font-poppins);
+    cursor: pointer;
+  }
+  .book-enquiry-itinerary-inner {
+    position: absolute;
+    top: 18.44rem;
+    left: 3.13rem;
+    background-color: var(--color-darkslategray);
+    width: 73.81rem;
+    height: 0.56rem;
+  }
+  .pricing1,
+  .usd-9502 {
+    position: absolute;
+    font-weight: 500;
+  }
+  .usd-9502 {
+    top: 1.31rem;
+    left: 2.25rem;
+  }
+  .pricing1 {
+    top: 0;
+    left: 6.19rem;
+    font-size: var(--font-size-xl);
+  }
+  .group-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: var(--br-31xl);
+    background-color: var(--color-steelblue);
+    width: 16.63rem;
+    height: 4.38rem;
+  }
+  .book-now2 {
+    position: absolute;
+    top: 0.81rem;
+    left: 3rem;
+    font-weight: 600;
+  }
+  .rectangle-container {
+    position: absolute;
+    top: 5.06rem;
+    left: 0;
+    width: 16.63rem;
+    height: 4.38rem;
+    font-size: var(--font-size-11xl);
+    color: var(--color-gray-100);
+  }
+  .usd-950-group {
+    position: absolute;
+    top: 0;
+    left: 31.69rem;
+    width: 16.63rem;
+    height: 9.44rem;
+    font-size: var(--font-size-21xl);
+    font-family: var(--font-poppins);
+  }
+  .group-child1 {
+    top: 0;
+    left: 0;
+    background-color: var(--color-whitesmoke-100);
+    border: 1px solid var(--color-silver);
+    width: 32.81rem;
+    height: 37.5rem;
+  }
+  .group-child1,
+  .group-child2,
+  .group-child3 {
+    position: absolute;
+    box-sizing: border-box;
+  }
+  .group-child2 {
+    top: 3.34rem;
+    left: -0.03rem;
+    border-top: 1px solid var(--color-silver);
+    width: 32.88rem;
+    height: 0.06rem;
+  }
+  .group-child3 {
+    top: 17.94rem;
+    left: 2.06rem;
+    border-radius: var(--br-8xs);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-darkgray);
+    width: 28.69rem;
+    height: 12.44rem;
+  }
+  .send-item {
+    top: 0;
+    left: 0;
+    border-radius: var(--br-10xs);
+    background-color: var(--color-steelblue);
+    width: 4.69rem;
+    height: 2.19rem;
+  }
+  .send-item,
+  .send2,
+  .send3 {
+    position: absolute;
+  }
+  .send3 {
+    top: 0.75rem;
+    left: 1.06rem;
+    display: flex;
+    align-items: center;
+    width: 2.63rem;
+    height: 0.75rem;
+  }
+  .send2 {
+    top: 31.63rem;
+    left: 2.06rem;
+    width: 4.69rem;
+    height: 2.19rem;
+    color: var(--color-white);
+    font-family: var(--font-inter);
+  }
+  .span14 {
+    color: var(--color-tomato);
+  }
+  .first-name-txt-container2 {
+    line-break: anywhere;
+    width: 100%;
+  }
+  .first-name2,
+  .inquire-about-tour1 {
+    position: absolute;
+    top: 4.63rem;
+    left: 2.06rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    width: 5.69rem;
+    height: 1.25rem;
+  }
+  .inquire-about-tour1 {
+    top: 1.19rem;
+    font-size: var(--font-size-xl);
+    width: 13.31rem;
+  }
+  .email-address2,
+  .last-name2,
+  .no-of-persons-container2,
+  .phone-11,
+  .phone-21,
+  .your-message1 {
+    position: absolute;
+    top: 8.56rem;
+    left: 2.06rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    width: 7.69rem;
+    height: 1.19rem;
+  }
+  .last-name2,
+  .no-of-persons-container2,
+  .phone-11,
+  .phone-21,
+  .your-message1 {
+    left: 17.94rem;
+    width: 7.13rem;
+  }
+  .last-name2,
+  .no-of-persons-container2,
+  .phone-21,
+  .your-message1 {
+    top: 12.5rem;
+    left: 2.06rem;
+  }
+  .last-name2,
+  .no-of-persons-container2,
+  .your-message1 {
+    left: 17.94rem;
+  }
+  .last-name2,
+  .your-message1 {
+    top: 16.44rem;
+    left: 2.06rem;
+  }
+  .last-name2 {
+    top: 4.63rem;
+    left: 17.94rem;
+    width: 5.69rem;
+    height: 1.25rem;
+  }
+  .group-child4,
+  .group-child5,
+  .group-child6,
+  .group-child7,
+  .group-child8,
+  .group-child9 {
+    position: absolute;
+    top: 6.19rem;
+    left: 2.06rem;
+    border-radius: var(--br-8xs);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-darkgray);
+    box-sizing: border-box;
+    width: 12.81rem;
+    height: 1.75rem;
+  }
+  .group-child5,
+  .group-child6,
+  .group-child7,
+  .group-child8,
+  .group-child9 {
+    top: 10.06rem;
+    height: 1.81rem;
+  }
+  .group-child6,
+  .group-child7,
+  .group-child8,
+  .group-child9 {
+    top: 6.19rem;
+    left: 17.94rem;
+    height: 1.75rem;
+  }
+  .group-child7,
+  .group-child8,
+  .group-child9 {
+    top: 10.06rem;
+    height: 1.81rem;
+  }
+  .group-child8,
+  .group-child9 {
+    top: 14rem;
+    left: 2.06rem;
+  }
+  .group-child9 {
+    left: 17.94rem;
+  }
+  .group-div {
+    position: absolute;
+    top: 160.56rem;
+    left: 42.69rem;
+    width: 32.81rem;
+    height: 37.5rem;
+    color: var(--color-gray-300);
+    font-family: var(--font-poppins);
+  }
+  .group-child10 {
+    position: absolute;
+    top: 0.88rem;
+    left: 3.75rem;
+    border-radius: 0 var(--br-xl) var(--br-xl) 0;
+    border: 2px solid var(--color-gainsboro);
+    box-sizing: border-box;
+    width: 6.38rem;
+    height: 3.25rem;
+  }
+  .ellipse-icon {
+    position: absolute;
+    top: -0.06rem;
+    left: -0.06rem;
+    width: 5.13rem;
+    height: 5.13rem;
+  }
+  .day-1 {
+    position: absolute;
+    top: 1.94rem;
+    left: 5.75rem;
+    font-weight: 600;
+  }
+  .rectangle-parent1 {
+    position: absolute;
+    top: 22.44rem;
+    left: 5.38rem;
+    width: 10.06rem;
+    height: 5rem;
+  }
+  .day-2 {
+    position: absolute;
+    top: 1.94rem;
+    left: 5.69rem;
+    font-weight: 600;
+  }
+  .rectangle-parent2 {
+    position: absolute;
+    top: 43.56rem;
+    left: 5.38rem;
+    width: 10.06rem;
+    height: 5rem;
+  }
+  .day-3 {
+    position: absolute;
+    top: 1.94rem;
+    left: 5.63rem;
+    font-weight: 600;
+  }
+  .rectangle-parent3 {
+    position: absolute;
+    top: 54.75rem;
+    left: 5.38rem;
+    width: 10.06rem;
+    height: 5rem;
+  }
+  .rectangle-parent4,
+  .rectangle-parent5,
+  .rectangle-parent6,
+  .rectangle-parent7 {
+    position: absolute;
+    top: 65.44rem;
+    left: 5.38rem;
+    width: 10.06rem;
+    height: 5rem;
+  }
+  .rectangle-parent5,
+  .rectangle-parent6,
+  .rectangle-parent7 {
+    top: 83.63rem;
+  }
+  .rectangle-parent6,
+  .rectangle-parent7 {
+    top: 102.75rem;
+  }
+  .rectangle-parent7 {
+    top: 118.31rem;
+  }
+  .rectangle-parent10,
+  .rectangle-parent8,
+  .rectangle-parent9 {
+    position: absolute;
+    top: 129.38rem;
+    left: 5.38rem;
+    width: 10.06rem;
+    height: 5rem;
+  }
+  .rectangle-parent10,
+  .rectangle-parent9 {
+    top: 146.25rem;
+  }
+  .rectangle-parent10 {
+    top: 156.19rem;
+  }
+  .rectangle-parent11,
+  .rectangle-parent12,
+  .rectangle-parent13 {
+    position: absolute;
+    top: 168.75rem;
+    left: 5.38rem;
+    width: 10.06rem;
+    height: 5rem;
+  }
+  .rectangle-parent12,
+  .rectangle-parent13 {
+    top: 181.25rem;
+  }
+  .rectangle-parent13 {
+    top: 190.13rem;
+  }
+  .book-enquiry-itinerary-child1 {
+    position: absolute;
+    top: 13rem;
+    left: 3.13rem;
+    border: 2px solid var(--color-silver);
+    box-sizing: border-box;
+    width: 73.88rem;
+    height: 188.88rem;
+  }
+  .our-representative-at {
+    position: absolute;
+    top: 25.63rem;
+    left: 16.75rem;
+    display: flex;
+    align-items: center;
+    width: 24.44rem;
+    height: 17.44rem;
+  }
+  .group-child35 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid var(--color-silver);
+    box-sizing: border-box;
+    width: 32.81rem;
+    height: 43.31rem;
+  }
+  .cost-included {
+    position: absolute;
+    top: 1.19rem;
+    left: 1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    width: 10rem;
+    height: 1.25rem;
+  }
+  .airport-pick-up {
+    margin-bottom: false;
+  }
+  .airport-pick-up-and-drop-by-pr {
+    margin: 0;
+    padding-left: var(--padding-xl);
+  }
+  .airport-pick-up-container {
+    position: absolute;
+    top: 4.25rem;
+    left: 1rem;
+    font-size: var(--font-inherit);
+    font-family: var(--font-inherit);
+    color: var(--color-black);
+    display: inline-block;
+    width: 30.75rem;
+    height: 32.13rem;
+  }
+  .rectangle-parent14 {
+    position: absolute;
+    top: 22.44rem;
+    left: 42.69rem;
+    width: 32.81rem;
+    height: 43.31rem;
+    font-size: var(--font-size-xl);
+    color: var(--color-steelblue);
+    font-family: var(--font-poppins);
+  }
+  .group-child37 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid var(--color-silver);
+    box-sizing: border-box;
+    width: 32.81rem;
+    height: 39.19rem;
+  }
+  .cost-not-included {
+    position: absolute;
+    top: 1.19rem;
+    left: 1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    width: 12.75rem;
+    height: 1.25rem;
+  }
+  .lunch-and-dinner-container {
+    position: absolute;
+    top: 4.19rem;
+    left: 1rem;
+    font-size: var(--font-inherit);
+    font-family: var(--font-inherit);
+    color: var(--color-black);
+    display: inline-block;
+    width: 30.75rem;
+    height: 35.69rem;
+  }
+  .rectangle-parent15 {
+    position: absolute;
+    top: 75.13rem;
+    left: 42.69rem;
+    width: 32.81rem;
+    height: 39.88rem;
+    font-size: var(--font-size-xl);
+    color: var(--color-tomato);
+    font-family: var(--font-poppins);
+  }
+  .today-you-will,
+  .today-you-will1 {
+    position: absolute;
+    top: 48.13rem;
+    left: 16.75rem;
+    display: flex;
+    align-items: center;
+    width: 24.44rem;
+    height: 6.44rem;
+  }
+  .today-you-will1 {
+    top: 59.5rem;
+    height: 6.19rem;
+  }
+  .as-you-trek,
+  .from-chhomrong-you,
+  .it-is-a,
+  .this-is-a,
+  .today-begins-with,
+  .today-is-the {
+    position: absolute;
+    top: 69.25rem;
+    left: 16.75rem;
+    display: flex;
+    align-items: center;
+    width: 24.44rem;
+    height: 14.13rem;
+  }
+  .from-chhomrong-you,
+  .it-is-a,
+  .this-is-a,
+  .today-begins-with,
+  .today-is-the {
+    top: 88.44rem;
+    height: 14.06rem;
+  }
+  .from-chhomrong-you,
+  .it-is-a,
+  .this-is-a,
+  .today-is-the {
+    top: 106.19rem;
+    width: 24rem;
+    height: 11.94rem;
+  }
+  .from-chhomrong-you,
+  .it-is-a,
+  .today-is-the {
+    top: 121.75rem;
+    width: 24.44rem;
+    height: 7.44rem;
+  }
+  .it-is-a,
+  .today-is-the {
+    top: 132.81rem;
+    height: 13.06rem;
+  }
+  .it-is-a {
+    top: 149.69rem;
+    height: 6.25rem;
+  }
+  .leaving-annapurna-mountain,
+  .the-wonderful-trek,
+  .trek-from-jhinu,
+  .we-follow-the {
+    position: absolute;
+    top: 159.69rem;
+    left: 16.75rem;
+    display: flex;
+    align-items: center;
+    width: 24.44rem;
+    height: 8.56rem;
+  }
+  .leaving-annapurna-mountain,
+  .the-wonderful-trek,
+  .trek-from-jhinu {
+    top: 173.31rem;
+    height: 7.56rem;
+  }
+  .leaving-annapurna-mountain,
+  .the-wonderful-trek {
+    top: 184.69rem;
+    height: 5.13rem;
+  }
+  .the-wonderful-trek {
+    top: 193.63rem;
+    height: 4rem;
+  }
+  .drive-to-nayapul,
+  .drive-to-pokhara,
+  .hike-to-poon,
+  .trek-to-chhomrong,
+  .trek-to-ghorepani,
+  .trek-to-himalaya,
+  .trek-to-mbc {
+    position: absolute;
+    top: 44.94rem;
+    left: 16.75rem;
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    width: 23.94rem;
+    height: 2.25rem;
+  }
+  .drive-to-nayapul,
+  .hike-to-poon,
+  .trek-to-chhomrong,
+  .trek-to-ghorepani,
+  .trek-to-himalaya,
+  .trek-to-mbc {
+    top: 56.44rem;
+    height: 2.13rem;
+  }
+  .hike-to-poon,
+  .trek-to-chhomrong,
+  .trek-to-ghorepani,
+  .trek-to-himalaya,
+  .trek-to-mbc {
+    top: 67.56rem;
+    width: 21.5rem;
+    height: 0.75rem;
+  }
+  .hike-to-poon,
+  .trek-to-chhomrong,
+  .trek-to-himalaya,
+  .trek-to-mbc {
+    top: 85.25rem;
+    width: 23.94rem;
+    height: 2.25rem;
+  }
+  .trek-to-chhomrong,
+  .trek-to-himalaya,
+  .trek-to-mbc {
+    top: 104.38rem;
+    width: 21.25rem;
+    height: 0.88rem;
+  }
+  .trek-to-himalaya,
+  .trek-to-mbc {
+    top: 120rem;
+    width: 23.88rem;
+    height: 0.81rem;
+  }
+  .trek-to-mbc {
+    top: 131.06rem;
+    width: 25rem;
+  }
+  .arrive-in-kathmandu,
+  .departure-from-kathmandu,
+  .drive-to-kathmandu,
+  .trek-to-bamboo,
+  .trek-to-jhinu,
+  .trek-to-nayapul {
+    position: absolute;
+    top: 147.75rem;
+    left: 16.75rem;
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    width: 20rem;
+    height: 1rem;
+  }
+  .arrive-in-kathmandu,
+  .departure-from-kathmandu,
+  .drive-to-kathmandu,
+  .trek-to-jhinu,
+  .trek-to-nayapul {
+    top: 157.81rem;
+    width: 21.75rem;
+    height: 0.94rem;
+  }
+  .arrive-in-kathmandu,
+  .departure-from-kathmandu,
+  .drive-to-kathmandu,
+  .trek-to-nayapul {
+    top: 170.13rem;
+    width: 25rem;
+    height: 2.25rem;
+  }
+  .arrive-in-kathmandu,
+  .departure-from-kathmandu,
+  .drive-to-kathmandu {
+    top: 182.75rem;
+    width: 22.19rem;
+    height: 1rem;
+  }
+  .arrive-in-kathmandu,
+  .departure-from-kathmandu {
+    top: 191.69rem;
+    width: 20.06rem;
+  }
+  .arrive-in-kathmandu {
+    top: 24rem;
+    width: 16.69rem;
+    height: 0.69rem;
+  }
+  .group-icon {
+    position: absolute;
+    height: 82.02%;
+    width: 3.52%;
+    top: 11.54%;
+    right: 88.44%;
+    bottom: 6.44%;
+    left: 8.05%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  .tour-guide {
+    position: absolute;
+    top: 0;
+    left: 0.44rem;
+    font-size: var(--font-size-6xl);
+    font-weight: 600;
+    display: inline-block;
+    width: 9.44rem;
+    height: 2.25rem;
+  }
+  .koshish-has-been,
+  .koshish-khadka {
+    position: absolute;
+    left: 9.88rem;
+    display: inline-block;
+  }
+  .koshish-khadka {
+    top: 0;
+    font-weight: 600;
+    width: 9.94rem;
+    height: 1.44rem;
+  }
+  .koshish-has-been {
+    top: 1.75rem;
+    font-size: var(--font-size-mini);
+    color: var(--color-black);
+    width: 23.69rem;
+    height: 6.81rem;
+  }
+  .group-child39 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8.13rem;
+    height: 8.13rem;
+    object-fit: cover;
+  }
+  .facebook-twitter-instagram {
+    position: absolute;
+    top: 88.02%;
+    left: 29.42%;
+    font-size: var(--font-size-mid);
+    color: var(--color-gray-200);
+  }
+  .koshish-khadka-parent {
+    position: absolute;
+    top: 3.81rem;
+    left: 0;
+    width: 33.56rem;
+    height: 10.44rem;
+  }
+  .miharika-has-been,
+  .miharika-sherpa {
+    position: absolute;
+    left: 9.88rem;
+    display: inline-block;
+  }
+  .miharika-sherpa {
+    top: 0;
+    font-weight: 600;
+    width: 9.94rem;
+    height: 1.38rem;
+  }
+  .miharika-has-been {
+    top: 1.69rem;
+    font-size: var(--font-size-mini);
+    color: var(--color-black);
+    width: 23.38rem;
+    height: 6.88rem;
+  }
+  .group-child40 {
+    position: absolute;
+    top: 0.25rem;
+    left: 0;
+    width: 8.13rem;
+    height: 8.13rem;
+    object-fit: cover;
+  }
+  .facebook-twitter-instagram1 {
+    position: absolute;
+    top: 88.02%;
+    left: 29.7%;
+    font-size: var(--font-size-mid);
+    color: var(--color-gray-200);
+  }
+  .miharika-sherpa-parent {
+    position: absolute;
+    top: 16.38rem;
+    left: 0;
+    width: 33.25rem;
+    height: 10.44rem;
+  }
+  .tour-guide-parent {
+    position: absolute;
+    top: 124.38rem;
+    left: 42.44rem;
+    width: 33.56rem;
+    height: 26.81rem;
+    font-size: var(--font-size-xl);
+    color: var(--color-steelblue);
+  }
+  .book-enquiry-itinerary {
+    position: relative;
+    background-color: var(--color-white);
+    width: 100%;
+    height: 206.81rem;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-mini);
+    color: var(--color-black);
+    font-family: var(--font-inter);
+  }
+  

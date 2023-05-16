@@ -40,8 +40,9 @@
   }
   
   .nav-link:hover {
-    color: rgb(164, 153, 153);
-    translate: 0px -7px;
+    /* color: rgb(164, 153, 153); */
+    color: #5dd0ea;
+    translate: 0px -2px;
     transition: 0.2s ease-in-out;
     cursor: pointer;
   }
@@ -102,10 +103,9 @@
     font-family: 'Poppins','Inter',Arial, Helvetica, sans-serif;
   }
   .bttn ul {
-    padding: 0.1rem;
-    background-color: #fff;
+    /* background-color: #fff;
     border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
     font-family:'Poppins','Inter',Arial, Helvetica, sans-serif;
 
   }

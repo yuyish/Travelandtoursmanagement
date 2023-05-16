@@ -1,6 +1,10 @@
-div {
-    margin: 0 auto;
+div{
+  text-align: center;
+}
+.PackageContent {
+    /* margin: 0 auto; */
     text-align: center;
+    margin-bottom: 7em;
   }
   
   /* Style for the headings */
@@ -88,7 +92,7 @@ div {
     border-radius: 10px;
     Width: 280px;
     Height: 250pt;
-    background-image: url("../public/Images/Kathmandu.jpg");
+    background-image: url("../Images/Kathmandu.jpg");
     background-size:cover;
   }
   .img2{
@@ -96,7 +100,7 @@ div {
     border-radius: 10px;
     Width: 280px;
     Height: 250pt;
-    background-image: url("../public/Images/Pokhara.jpg");
+    background-image: url("../Images/Pokhara.jpg");
     background-repeat: no-repeat;
     background-size:cover;
   }
@@ -105,7 +109,7 @@ div {
       border-radius: 10px;
     Width: 280px;
     Height: 250pt;
-    background-image: url("../public/Images/Everest.jpg");
+    background-image: url("../Images/Everest.jpg");
     background-size:cover;
   }
   #seemore{

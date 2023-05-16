@@ -1,0 +1,454 @@
+.my-booking-info-child {
+    position: absolute;
+    top: 11.63rem;
+    left: 28.25rem;
+    border-radius: var(--br-3xs);
+    border: 2px solid var(--color-lightgray-200);
+    box-sizing: border-box;
+    width: 48.63rem;
+    height: 17.69rem;
+  }
+  .booking-information,
+  .travel-info {
+    position: absolute;
+    top: 7.69rem;
+    left: 3.19rem;
+    font-size: var(--font-size-6xl);
+    font-family: var(--font-inter);
+    color: var(--color-gray-100);
+  }
+  .travel-info {
+    top: 13.06rem;
+    left: 30.19rem;
+    font-size: var(--font-size-5xl);
+    font-family: var(--font-inter-tight);
+    color: var(--color-darkslategray-200);
+  }
+  .abc-trek-,
+  .booking-name,
+  .hotel-radisson,
+  .mahindra-jeep4 {
+    position: absolute;
+    left: 29.25rem;
+    display: flex;
+    align-items: center;
+    height: 1.88rem;
+  }
+  .booking-name {
+    top: 16.63rem;
+    font-size: var(--font-size-lgi);
+    font-weight: 600;
+    width: 10rem;
+  }
+  .abc-trek-,
+  .hotel-radisson,
+  .mahindra-jeep4 {
+    top: 19.88rem;
+    width: 10.81rem;
+  }
+  .hotel-radisson,
+  .mahindra-jeep4 {
+    top: 23.19rem;
+  }
+  .hotel-radisson {
+    top: 26.5rem;
+    left: 29.38rem;
+    width: 8.31rem;
+  }
+  .accommodation1,
+  .april-2023,
+  .april-20231,
+  .transportation1,
+  .travel {
+    position: absolute;
+    top: 19.88rem;
+    left: 41.25rem;
+    display: flex;
+    align-items: center;
+    width: 4.13rem;
+    height: 1.88rem;
+  }
+  .accommodation1,
+  .april-2023,
+  .april-20231,
+  .transportation1 {
+    top: 23.19rem;
+    width: 8.56rem;
+  }
+  .accommodation1,
+  .april-2023,
+  .april-20231 {
+    top: 26.5rem;
+    width: 9.75rem;
+  }
+  .april-2023,
+  .april-20231 {
+    top: 19.88rem;
+    left: 52.25rem;
+    width: 7.63rem;
+  }
+  .april-20231 {
+    top: 23.19rem;
+    width: 8.31rem;
+  }
+  .april-20232,
+  .booking-for,
+  .date,
+  .price,
+  .status,
+  .usd-78,
+  .usd-9501,
+  .usd-9502 {
+    position: absolute;
+    top: 26.5rem;
+    left: 52.38rem;
+    display: flex;
+    align-items: center;
+    width: 7.63rem;
+    height: 1.88rem;
+  }
+  .booking-for,
+  .date,
+  .price,
+  .status,
+  .usd-78,
+  .usd-9501,
+  .usd-9502 {
+    top: 19.88rem;
+    left: 61.56rem;
+    width: 5.63rem;
+  }
+  .booking-for,
+  .date,
+  .price,
+  .status,
+  .usd-78,
+  .usd-9502 {
+    top: 23.19rem;
+    width: 6.06rem;
+  }
+  .booking-for,
+  .date,
+  .price,
+  .status,
+  .usd-9502 {
+    top: 26.5rem;
+    left: 61.69rem;
+    width: 5.63rem;
+  }
+  .booking-for,
+  .date,
+  .price,
+  .status {
+    top: 16.63rem;
+    left: 41.25rem;
+    font-size: var(--font-size-lgi);
+    font-weight: 600;
+    width: 9rem;
+  }
+  .date,
+  .price,
+  .status {
+    left: 52.25rem;
+    width: 3.56rem;
+  }
+  .price,
+  .status {
+    left: 61.56rem;
+    width: 3.81rem;
+  }
+  .status {
+    top: 16.56rem;
+    left: 68.25rem;
+    width: 5.31rem;
+  }
+  .my-booking-info-item {
+    position: absolute;
+    top: 15.53rem;
+    left: 3.06rem;
+    width: 22.38rem;
+    height: 0.06rem;
+  }
+  .my-booking-info-inner {
+    position: absolute;
+    top: 15.5rem;
+    left: 28.25rem;
+    width: 48.63rem;
+    height: 0.13rem;
+  }
+  .my-booking-info-child1,
+  .my-booking-info-child2,
+  .my-booking-info-child3 {
+    position: absolute;
+    top: 18.94rem;
+    left: 28.25rem;
+    width: 48.63rem;
+    height: 0.13rem;
+  }
+  .my-booking-info-child2,
+  .my-booking-info-child3 {
+    top: 22.38rem;
+  }
+  .my-booking-info-child3 {
+    top: 25.81rem;
+  }
+  .personal-information {
+    position: absolute;
+    top: 1.44rem;
+    left: 2rem;
+    font-family: var(--font-inter-tight);
+  }
+  .group-child14,
+  .group-icon1,
+  .vector-icon5,
+  .vector-icon6,
+  .vector-icon7 {
+    position: absolute;
+    height: 10.6%;
+    width: 13.85%;
+    top: 44.88%;
+    right: 85.28%;
+    bottom: 44.52%;
+    left: 0.87%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .group-child14,
+  .group-icon1,
+  .vector-icon6,
+  .vector-icon7 {
+    height: 9.89%;
+    width: 11.26%;
+    top: 0.35%;
+    right: 87.88%;
+    bottom: 89.75%;
+  }
+  .group-child14,
+  .group-icon1,
+  .vector-icon7 {
+    height: 11.84%;
+    width: 14.5%;
+    top: 66.7%;
+    right: 85.17%;
+    bottom: 21.47%;
+    left: 0.32%;
+  }
+  .group-child14,
+  .vector-icon7 {
+    height: 10.38%;
+    width: 12.12%;
+    top: 89.4%;
+    right: 87.01%;
+    bottom: 0.22%;
+    left: 0.87%;
+  }
+  .group-child14 {
+    height: 7.77%;
+    width: 15.15%;
+    top: 23.67%;
+    right: 84.85%;
+    bottom: 68.55%;
+    left: 0;
+  }
+  .edit-profile,
+  .logout,
+  .my-favourite,
+  .my-tours,
+  .settings {
+    position: absolute;
+    left: 4.13rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    width: 8.88rem;
+    height: 1.88rem;
+  }
+  .edit-profile {
+    top: 0;
+  }
+  .logout,
+  .my-favourite,
+  .my-tours,
+  .settings {
+    top: 3.94rem;
+  }
+  .logout,
+  .my-favourite,
+  .settings {
+    top: 7.94rem;
+    width: 10.31rem;
+  }
+  .logout,
+  .settings {
+    top: 11.88rem;
+    width: 8.88rem;
+  }
+  .logout {
+    top: 15.81rem;
+    width: 5.44rem;
+  }
+  .vector-parent {
+    position: absolute;
+    height: 47.01%;
+    width: 64.35%;
+    top: 50%;
+    right: 27.3%;
+    bottom: 2.99%;
+    left: 8.36%;
+    font-size: var(--font-size-3xl);
+    color: var(--color-dimgray-100);
+  }
+  .saujan-rijal {
+    position: absolute;
+    top: 8rem;
+    left: 0;
+    font-weight: 500;
+  }
+  .group-child15 {
+    position: absolute;
+    top: 0;
+    left: 0.81rem;
+    width: 7.25rem;
+    height: 7.25rem;
+  }
+  .saujan-rijal-parent {
+    position: absolute;
+    top: 5.88rem;
+    left: 6.81rem;
+    width: 8.88rem;
+    height: 10.25rem;
+    color: var(--color-gray-100);
+  }
+  .group-child16,
+  .personal-information-parent {
+    position: absolute;
+    width: 22.44rem;
+    height: 37.63rem;
+  }
+  .group-child16 {
+    top: 0;
+    left: 0;
+  }
+  .personal-information-parent {
+    top: 11.63rem;
+    left: 3.06rem;
+    font-size: var(--font-size-5xl);
+    color: var(--color-darkslategray-200);
+  }
+  .group-child17 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: var(--br-8xs);
+    background-color: var(--color-forestgreen);
+    width: 6.75rem;
+    height: 1.63rem;
+  }
+  .completed {
+    position: absolute;
+    top: 0.19rem;
+    left: 1.19rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    width: 4.44rem;
+    height: 1.25rem;
+  }
+  .my-booking-info-child4,
+  .rectangle-parent4 {
+    position: absolute;
+    left: 68.25rem;
+    width: 6.75rem;
+    height: 1.63rem;
+  }
+  .rectangle-parent4 {
+    top: 20rem;
+    font-size: var(--font-size-xs);
+    color: var(--color-white);
+  }
+  .my-booking-info-child4 {
+    top: 23.31rem;
+    border-radius: var(--br-8xs);
+    background-color: var(--color-forestgreen);
+  }
+  .completed1,
+  .rectangle-parent5 {
+    position: absolute;
+    font-size: var(--font-size-xs);
+    color: var(--color-white);
+  }
+  .completed1 {
+    top: 23.5rem;
+    left: 69.44rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    width: 4.38rem;
+    height: 1.25rem;
+  }
+  .rectangle-parent5 {
+    top: 26.63rem;
+    left: 68.38rem;
+    width: 6.75rem;
+    height: 1.63rem;
+  }
+  .group-child19 {
+    position: absolute;
+    top: 2.66rem;
+    left: 0;
+    width: 80rem;
+    height: 0.19rem;
+  }
+  .home-profile {
+    position: absolute;
+    top: 0;
+    left: 51.88rem;
+    font-weight: 500;
+  }
+  .vector-group {
+    position: absolute;
+    top: 7.69rem;
+    left: 0;
+    width: 79.97rem;
+    height: 2.75rem;
+    font-size: var(--font-size-xl);
+    color: #706f6f;
+  }
+  .my-booking-info-child5,
+  .my-booking-info-child6,
+  .my-booking-info-child7,
+  .my-booking-info-child8 {
+    position: absolute;
+    top: 15.53rem;
+    left: 40.59rem;
+    border-right: 1px solid var(--color-lightgray-200);
+    box-sizing: border-box;
+    width: 0.06rem;
+    height: 13.81rem;
+  }
+  .my-booking-info-child6,
+  .my-booking-info-child7,
+  .my-booking-info-child8 {
+    left: 51.59rem;
+  }
+  .my-booking-info-child7,
+  .my-booking-info-child8 {
+    left: 60.91rem;
+  }
+  .my-booking-info-child8 {
+    top: 15.47rem;
+    left: 67.59rem;
+  }
+  .my-booking-info {
+    position: relative;
+    background-color: var(--color-white);
+    width: 100%;
+    height: 52rem;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-lg);
+    color: var(--color-gray-200);
+    font-family: var(--font-poppins);
+  }
+  

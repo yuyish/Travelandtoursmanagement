@@ -1,0 +1,203 @@
+.ImageAboutus{
+    height: 100px;
+    width: 100%;
+    background-image: url("../Images/Signin.jpg");
+    background-size: cover;
+}
+.about{
+    display: flex;
+    color: white;
+    font-family: 'Inter',Arial, Helvetica, sans-serif;
+    justify-content: center;
+    gap: 55rem;
+    align-items: center;
+}
+
+.Aboutus-content{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+.Content-Img{
+    height: 318px;
+    margin-top: 80px;
+    width: 25%;
+    background-image:url('../Images/Aboutusimg.png') ;
+    background-size: cover;
+    margin-left: 100px;
+}
+.About-Cont{
+    width: 70%;
+}
+.nm{
+    width: 70%;
+}
+/* .About-Cont h2{
+    width: 70%;
+} */
+.Text-space{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.text2{
+    margin-top: 10px;
+    margin-left: 70px;
+    text-align: justify;
+    font-weight: lighter;
+}
+.text1{
+    margin-left: 70px;
+    text-align: justify;
+}
+.gallery {
+    text-align: center;
+
+}
+.gallery h2{
+    display: inline;
+}
+.galary-maindiv {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+/* .imagecard{
+    width: 250px;
+    height: 250px;
+} */
+.Gallery-img1{
+    margin-top: 8px;
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    background-image: url("../Images/Kathmandu.jpg");
+    background-size:cover;
+}
+.Gallery-img2{
+    margin-top: 8px;
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    background-image: url("../Images/Pokhara.jpg");
+    background-size:cover;
+}
+.Gallery-img3{
+    margin-top: 8px;
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    background-image: url("../Images/Chitwan.png");
+    background-size:cover;
+}
+.Gallery-img4{
+    margin-top: 8px;
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    background-image: url("../Images/Lumbini.png");
+    background-size:cover;
+}
+.How{
+    margin-top: 40px;
+}
+.How .h{
+    font-family: 'Qwigley';
+    color: red;
+    font-weight: lighter;
+    font-size: 80px;
+}
+.Howmaindiv {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8rem;
+}
+
+.How-Register{
+    margin-top: 8px;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    background-image: url("../Images/Register.png");
+    background-size:cover;
+}
+.How-Bookpacakge{
+    margin-top: 8px;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    background-image: url("../Images/Bookpacakge.png");
+    background-size:cover;
+}
+.How-Login{
+    margin-top: 8px;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    background-image: url("../Images/Login.png");
+    background-size:cover;
+}
+.How-Travel{
+    margin-top: 8px;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    background-image: url("../Images/travel.png");
+    background-size:cover;
+}
+.Why{
+    margin-top: 40px;
+}
+.Why .w{
+    font-family: 'Qwigley';
+    color: red;
+    font-size: 80px;
+    font-weight: lighter;
+}
+.Whymaindiv {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8rem;
+}
+.Why-Service{
+    margin-top: 8px;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    background-image: url("../Images/Like.png");
+    background-size:cover;
+}
+.Why-Security{
+    margin-top: 8px;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    background-image: url("../Images/Security.png");
+    background-size:cover;
+}
+.Why-Support{
+    margin-top: 8px;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    background-image: url("../Images/Support.png");
+    background-size:cover;
+}
+
+/* .Howcard{
+    width: 150px;
+    height: 150px;
+} */
